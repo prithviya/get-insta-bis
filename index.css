@@ -594,10 +594,6 @@ img {
 }
 
 #tsum-tabs main {
-  min-width: auto;
-  max-width: auto;
-  padding: 50px;
-  margin: 0 auto;
   background: #fff;
 }
 
