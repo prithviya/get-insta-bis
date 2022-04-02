@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
+*
+{
+  color: #333 !important;
+}
+
 .uk-navbar-nav>li>a {
     font-size: 1.1rem;
     color: white !important;
@@ -17,11 +22,9 @@
     border-color: #fff !important;
     font-size: 1.1rem;
     font-family: 'Roboto Slab', serif;
-    color: #fff
+    color: #fff !important;
 }
-.uk-button-default {
-  color: #fff;
-}
+
 .uk-offcanvas-bar {
   background: linear-gradient( 109.6deg,  rgba(116,18,203,1) 0%, rgba(230,46,131,1) 91.2% );
   color: white !important;
@@ -33,7 +36,7 @@
 {
     font-family: 'Roboto Slab', serif;
     font-size: 3.5rem;
-    color: #fff;
+    color: #fff !important;
 }
 .uk-navbar-container:not(.uk-navbar-transparent) {
   background-image: linear-gradient( 109.6deg, rgba(230,46,131,1) 0%, rgba(116,18,203,1) 100%);
@@ -45,11 +48,14 @@
     color: #fff;
 }
 /* button */
-
+.uk-default-button
+{
+  color: #fff!important;
+}
 /* CSS */
 .button-64 {
   background-color: transparent;
-  color: white;
+  color: white !important;
   border: 2px solid;
   border-color: #fff;
   align-items: center;
@@ -82,6 +88,7 @@
     border-radius: 6px;
     width: 100%;
     height: 100%;
+    color: #fff !important;
     transition: 300ms;
   }
   
@@ -106,7 +113,7 @@
   }
   .custom-icon
   {
-    color: #333;
+    color: #222;
     font-size: 3.6rem;
   }
   .custom-card-border 
@@ -119,7 +126,7 @@
   }
   .custom-color-white
   {
-    color: #f7f7f7;
+    color: #f7f7f7 !important;
     font-weight: 500;
   }
   /* button */
@@ -203,7 +210,7 @@
   --title-color: hsl(var(--hue-color), 12%, 15%);
   --text-color: hsl(var(--hue-color), 12%, 35%);
   --text-color-light: hsl(var(--hue-color), 12%, 65%);
-  --white-color: #FFF;
+  --white-color: #FFF !important;
   --body-color: hsl(var(--hue-color), 100%, 99%);
   --container-color: #FFF;
 
@@ -323,6 +330,7 @@ img {
 
 .card__pricing-symbol {
   font-size: var(--smaller-font-size);
+  color: var(--white-color) !important;
 }
 
 .card__pricing-number {
@@ -336,7 +344,7 @@ img {
 
 .card__pricing-number, 
 .card__pricing-month {
-  color: var(--white-color);
+  color: var(--white-color) !important;
 }
 
 .card__pricing::after, 
@@ -380,7 +388,7 @@ img {
   font-size: var(--normal-font-size);
   border-radius: .5rem;
   background: linear-gradient(157deg, var(--first-color-light) -12%, var(--first-color) 109%);
-  color: var(--white-color);
+  color: var(--white-color) !important;
   cursor: pointer;
   transition: .4s;
 }
@@ -470,7 +478,7 @@ img {
   padding: 5px 0;
   text-transform: uppercase;
   font-weight: 700;
-  color: #fff;
+  color: var(--white-color) !important;
   margin: 0;
 }
 
@@ -486,6 +494,7 @@ img {
   overflow: hidden;
   border-radius: 50px;
   border: 5px solid #fff;
+  color: var(--white-color) !important;
   line-height: 80px;
   font-size: 28px;
   font-weight: 700;
@@ -495,6 +504,7 @@ img {
   position: absolute;
   font-size: 9px;
   bottom: -10px;
+  color: var(--white-color) !important;
   left: 30px;
   font-weight: 400;
 }
