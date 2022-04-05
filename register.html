@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,64 +14,78 @@
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.7/dist/js/uikit-icons.min.js"></script>
-</head>
-    <body>
-        <div class="container uk-visible@m" id="container">
-            <div class="form-container sign-up-container">
-              <form action="#">
-                <h1>Create Account</h1>
-                <div class="social-media">
-                  
-                </div>
-                <span>or sign up using your email account</span>
-                <input type="text" placeholder="Name" required>
-                <input type="text" placeholder="Email" required>
-                <input type="text" placeholder="Password" required>
-                <button>Sign Up</button>
-                
-              </form>
+  </head>
+  <body>
+      <div class="container uk-visible@m" id="container">
+        <div class="form-container sign-up-container">
+          <form action="#">
+            <h1>New User</h1>
+            <div class="social-media">
+              <a href="#" class="social"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="social"><i class="fa fa-envelope-o"></i></a>
+              <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
             </div>
-            <div class="form-container log-in-container">
-              <form action="#">
-                <h1>Log In</h1>
-                <div class="social-media">
-                  <a href="#" class="social"><i class="fa fa-facebook"></i></a>
-                  <a href="#" class="social"><i class="fa fa-envelope-o"></i></a>
-                  <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
-                </div>
-                <span>or sign up using your email account</span>
-                <input type="text" placeholder="Email" required>
-                <input type="text" placeholder="Password" required>
-                <a href="#">Forgot your password?</a>
-                <button>Sign In</button>
-                
-              </form>
+            <span>or sign up using your email account</span>
+            <input class="uk-input" type="text" placeholder="Name">
+            <input class="uk-input" type="text" placeholder="Email">
+            <input class="uk-input" type="text" placeholder="Password">
+            <button>Sign Up</button>   
+                           
+          </form>
+        </div>
+        <div class="form-container log-in-container">
+          <form action="#">
+            <h1>Log In</h1>
+            <div class="social-media">
+              <a href="#" class="social"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="social"><i class="fa fa-envelope-o"></i></a>
+              <a href="#" class="social"><i class="fa fa-linkedin"></i></a>
             </div>
-            <div class="overlay-container">
+            <span>or sign up using your email account</span>
+            <input class="uk-input" type="text" placeholder="Email">
+            <input class="uk-input" type="text" placeholder="Password">
+            <a href="#">Forgot your password?</a>
+            <button class="uk-margin">Sign In</button>
+          </form>
+        </div>
+          <div class="overlay-container">
             <div class="overlay">
               <div class="overlay-panel left">
-                <h1>Welcome Back!</h1>
+                <h1 style="color:#fff">Welcome Back!</h1>
                 <p>To keep connected with us please login with your personal info</p>
-                <button class="ghost" id="signIn">Log In</button>          
+                <button class="ghost" id="signIn">Log In</button>
+                <a href="index.html" class="uk-margin">
+                  <button class="cta">
+                    <span><i class="fa fa-long-arrow-left uk-margin-small-right" aria-hidden="true"></i>Back to Home</span>
+                  </button>
+                </a>       
               </div>
               <div class="overlay-panel right">
-                <h1>Howdy, Stranger!</h1>
+                <h1 style="color:#fff">Howdy, Stranger!</h1>
                 <p>Sign up for an account and start your journey now!!</p>
                 <button class="ghost" id="signUp">Sign Up</button>
+                <a href="index.html" class="uk-margin">
+                  <button class="cta">
+                    <span><i class="fa fa-long-arrow-left uk-margin-small-right" aria-hidden="true"></i>Back to Home</span>
+                  </button>
+                </a>
               </div>
-              </div>
-              </div>
+            </div>
           </div>
-          <script>
-              const signUpButton = document.getElementById('signUp');
-                const signInButton = document.getElementById('signIn');
-                const container = document.getElementById('container');
+        </div>
+        <div class="uk-hidden@m">
 
-                signUpButton.addEventListener('click', () =>
-                container.classList.add('right-panel-active'));
+        </div>
+        <script>
+            const signUpButton = document.getElementById('signUp');
+              const signInButton = document.getElementById('signIn');
+              const container = document.getElementById('container');
 
-                signInButton.addEventListener('click', () =>
-                container.classList.remove('right-panel-active'));
-          </script>
-    </body>
+              signUpButton.addEventListener('click', () =>
+              container.classList.add('right-panel-active'));
+
+              signInButton.addEventListener('click', () =>
+              container.classList.remove('right-panel-active'));
+        </script>
+  </body>
 </html>
