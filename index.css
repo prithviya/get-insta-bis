@@ -674,29 +674,27 @@ img {
 .tabs {
   width: 100%;
   max-width: 600px;
-  margin: 20px;
 }
 
-  input {
+.tabs input {
     opacity: 0;
+    display: none;
   }
 
-  label {
+  .tabs span {
     cursor: pointer;
     background: -webkit-linear-gradient(#666, #555);
     color: #eee;
     border-radius: 5px 5px 0 0;
     padding: 1.5% 3%;
-    float: left;
-    margin-right: 2px;
     font: italic 1em cambria;
   }
 
-    label:hover {
+    span:hover {
       background: -webkit-linear-gradient(#777, #666);
     }
 
-    input:checked + label {
+    .tabs input:checked + span {
       background: #fff;
       color: #333;
     }
