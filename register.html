@@ -73,8 +73,55 @@
             </div>
           </div>
         </div>
-        <div class="uk-hidden@m">
+        <div class="uk-hidden@m"> 
+          <div class="wrapper">            
+            <!--  Header  -->
+            <header class="section header">
+              <div class="trapezoid"></div>              
+              <div class="header__text">
+                <h1 class="uk-text-bold" style="color: #fff !important;">Welcome Back!</h1>
+                <p style="color: #fff !important;">Sign in or create a new account.</p>
+                <a href="index.html" class="uk-margin">
+                  <button class="cta">
+                    <span><i class="fa fa-long-arrow-left uk-margin-small-right" aria-hidden="true"></i>Back to Home</span>
+                  </button>
+                </a> 
+              </div>
+            </header>
 
+    <!--  Sign Up  -->
+    <section class="section sign-up">
+      <div class="trapezoid"></div>
+      <form action="" class="custom-form">
+        <div class="uk-margin">
+          <input class="uk-input" type="text" name="name" placeholder="Name">
+        </div>
+        <div class="uk-margin">
+          <input class="uk-input" type="text" name="email" placeholder="Email">
+        </div>
+        <div class="uk-margin">
+          <input class="uk-input" type="password" name="password" placeholder="Password">
+        </div>
+        <input class="uk-input" type="password" name="confirm" placeholder="Confirm Password">
+        <button>Create Account</button>
+        <p class="opposite-btn2 uk-text-center" style="color: #fff;">Already have an account?</p>
+      </form>
+    </section>
+    
+    <!--  Sign In  -->
+    <section class="section sign-in">
+      <form action="" class="custom-form">
+        <div class="uk-margin">
+          <input class="uk-input" type="text" name="email" placeholder="Email">
+        </div>
+        <div class="uk-margin">
+          <input class="uk-input uk-margin" type="password" name="password" placeholder="Password">
+        </div>
+        <button>Sign In</button>
+        <p class="opposite-btn1 uk-text-center" style="color: #fff;">Don't have an account?</p>
+      </form>
+    </section>
+</div>
         </div>
         <script>
             const signUpButton = document.getElementById('signUp');
@@ -86,6 +133,28 @@
 
               signInButton.addEventListener('click', () =>
               container.classList.remove('right-panel-active'));
+
+
+
+              const signUp = document.querySelector('.sign-up');
+              const signIn = document.querySelector('.sign-in');
+
+              // Switch btns: there are two only because I was in a hurry a didn't want to write all the javascript immediately. In a production environment, a better solution would be implemented.
+              const btn1 = document.querySelector('.opposite-btn1');
+              const btn2 = document.querySelector('.opposite-btn2');
+
+
+              // Switches to 'Create Account'
+              btn1.addEventListener('click', () => {
+                signUp.style.display = 'block';
+                signIn.style.display = 'none'; 
+              });
+
+              // Switches to 'Sign In'
+              btn2.addEventListener('click', () => {
+                signUp.style.display = 'none';
+                signIn.style.display = 'block';
+              });
         </script>
   </body>
 </html>
