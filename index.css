@@ -191,7 +191,7 @@
    }
    
    .c-button--gooey:hover {
-    color: #fff;
+    color: #fff !important;
    }
    
    .c-button--gooey:hover .c-button__blobs div {
