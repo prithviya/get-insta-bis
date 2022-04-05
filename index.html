@@ -25,9 +25,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
-    <div >
+    <div>
         <div class="uk-section-primary uk-preserve-color">
-            <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 200" class="custom-navbar-color">        
+            <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 600" class="custom-navbar-color">        
                 <nav class="uk-navbar-container" uk-navbar>
                     <div class="uk-navbar-center">                
                         <ul class="uk-navbar-nav">
@@ -49,10 +49,18 @@
                             <li>
                                 <a href="" class="uk-text-capitalize uk-visible@m">Blog</a>
                             </li>
-                            <li>
-                                <a href="">
-                                    <button class="uk-button uk-button-default uk-text-capitalize uk-visible@m custom-login-button">Login</button>
-                                </a>
+                            <li class="uk-margin">
+                                <button class="uk-button uk-visible@m uk-button-default uk-text-capitalize custom-login-button">Login</button>
+                                <div uk-dropdown="pos: top-right">
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <ul class="uk-nav uk-dropdown-nav">
+                                            <li class="uk-text-bold uk-text-capitalize"><a href="register.html" class="custom-color-white" style="font-size:1rem;"><span class="uk-margin-small-left"><i class="custom-color-white fa-2x fa fa-file-text-o" aria-hidden="true"></i></span>Register</a></li>
+                                            <li class="uk-text-bold uk-text-capitalize"><a href="#" class="custom-color-white" style="font-size:1rem;"><span class="uk-margin-small-left"><i class="custom-color-white fa-2x fa fa-user-circle-o" aria-hidden="true"></i></span>Profile</a></li>
+                                            <hr class="uk-divider-small uk-margin-small" style="border: 1px solid #fff;">
+                                            <li class="uk-text-bold uk-text-capitalize"><a href="#" class="custom-color-white" style="font-size:1rem;"><span class="uk-margin-small-left"><i class="custom-color-white fa-2x fa fa-sign-out" aria-hidden="true"></i></span>Lock Out</a></li>
+                                        </ul>
+                                    </ul>
+                                </div>
                             </li>
                             <li>
                                 <a href="" class="uk-hidden@m uk-text-capitalize">Getinsta</button>
@@ -60,16 +68,17 @@
                             </li>
                             <li class="uk-margin">
                                 <button class="uk-button uk-hidden@m uk-button-default uk-text-capitalize custom-login-button">Login</button>
-                                <!-- <div uk-dropdown="pos: top-right">
+                                <div uk-dropdown="pos: top-right">
                                     <ul class="uk-nav uk-dropdown-nav">
-                                        <li class="uk-active"><span class="uk-form-icon" uk-icon="icon: lock"></span><a href="#" class="uk-margin-small-left">Logout</a></li><hr>
-                                        <li class="uk-active"><span class="uk-form-icon" uk-icon="icon: lock"></span><a href="#" class="uk-margin-small-left">Logout</a></li><hr>
-                                        
+                                        <ul class="uk-nav uk-dropdown-nav">
+                                            <li class="uk-text-bold uk-text-capitalize"><a href="register.html" class="custom-color-white" style="font-size:1rem;"><span class="uk-margin-small-left"><i class="custom-color-white fa-2x fa fa-file-text-o" aria-hidden="true"></i></span>Register</a></li>
+                                            <li class="uk-text-bold uk-text-capitalize"><a href="#" class="custom-color-white" style="font-size:1rem;"><span class="uk-margin-small-left"><i class="custom-color-white fa-2x fa fa-user-circle-o" aria-hidden="true"></i></span>Profile</a></li>
+                                            <hr class="uk-divider-small uk-margin-small" style="border: 1px solid #fff;">
+                                            <li class="uk-text-bold uk-text-capitalize"><a href="#" class="custom-color-white" style="font-size:1rem;"><span class="uk-margin-small-left"><i class="custom-color-white fa-2x fa fa-sign-out" aria-hidden="true"></i></span>Lock Out</a></li>
+                                        </ul>
                                     </ul>
-                                </div> -->
-                            
-                            </li>
-                                                       
+                                </div>
+                            </li>                                                       
                         </ul>
                     </div>
                     <!-- mobile view -->
