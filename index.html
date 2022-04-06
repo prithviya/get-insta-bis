@@ -35,53 +35,123 @@
                                 <a href="" class="uk-text-capitalize uk-visible@m">Home</a>
                             </li>
                             <li>
-                                <a href="" class="uk-text-capitalize uk-visible@m">store</a>
+                                <a href="" class="uk-text-capitalize uk-visible@m">About us</a>
                             </li>
                             <li>
-                                <a href="" class="uk-text-capitalize uk-visible@m">Get followers & Likes</a>
+                                <a href="" class="uk-text-capitalize uk-visible@m">our services</a>
                             </li>
                             <li>
-                                <a href="" class="uk-text-capitalize uk-visible@m">Instagram captions</a>
+                                <a href="" class="uk-text-capitalize uk-visible@m">contact us</a>
                             </li>
                             <li>
-                                <a href="" class="uk-text-capitalize uk-visible@m">Free Tools</a>
+                                <a href="" class="uk-text-capitalize uk-visible@m">Wallet</a>
                             </li>
                             <li>
-                                <a href="" class="uk-text-capitalize uk-visible@m">Blog</a>
+                                <a href="" class="uk-text-capitalize uk-visible@m">Profile</a>
                             </li>
-                            <!-- <li class="uk-margin">
-                                <button class="uk-button uk-visible@m uk-button-default uk-text-capitalize custom-login-button">Login</button>
-                                <div uk-dropdown="pos: top-right">
-                                    <ul class="uk-nav uk-dropdown-nav">
-                                        <ul class="uk-nav uk-dropdown-nav">
-                                            <li class="uk-text-bold uk-text-capitalize"><a href="register.html" class="custom-color-white" style="font-size:1rem;"><span><i class="custom-color-white fa-2x fa fa-file-text-o uk-margin-small-right aria-hidden="true"></i></span>Register</a></li>
-                                            <li class="uk-text-bold uk-text-capitalize"><a href="#" class="custom-color-white" style="font-size:1rem;"><span class=""><i class="custom-color-white uk-margin-small-right fa-2x fa fa-user-circle-o" aria-hidden="true"></i></span>Profile</a></li>
-                                            <hr class="uk-divider-small uk-margin-small" style="border: 1px solid #fff;">
-                                            <li class="uk-text-bold uk-text-capitalize"><a href="#" class="custom-color-white" style="font-size:1rem;"><span class=""><i class="custom-color-white uk-margin-small-right fa-2x fa fa-sign-out" aria-hidden="true"></i></span>Lock Out</a></li>
-                                        </ul>
-                                    </ul>
-                                </div>
-                            </li> -->
+                            
                             <li>
                                 <a href="" class="uk-hidden@m uk-text-capitalize">Getinsta</button>
                                 </a>
                             </li>
                             <li style="margin-top: 25px;">
-                                <!-- <button class="uk-button uk-hidden@m uk-button-default uk-text-capitalize custom-login-button">Login</button> -->
-                                <span class="uk-margin-xlarge-left">
+                                <span class="uk-margin-medium-left uk-visible@m">
                                     <i class="fa fa-user-circle fa-2x custom-color-white" aria-hidden="true"></i>
                                 </span>
                                 <div uk-dropdown="pos: top-right">
                                     <ul class="uk-nav uk-dropdown-nav">
                                         <ul class="uk-nav uk-dropdown-nav">
-                                            <li class="uk-text-bold uk-text-capitalize"><a href="register.html" class="custom-color-white" style="font-size:1rem;"><span class=""><i class="uk-margin-small-right custom-color-white fa-2x fa fa-file-text-o" aria-hidden="true"></i></span>Register</a></li>
-                                            <li class="uk-text-bold uk-text-capitalize"><a href="#" class="custom-color-white" style="font-size:1rem;"><span class=""><i class="uk-margin-small-right custom-color-white fa-2x fa fa-user-circle-o" aria-hidden="true"></i></span>Profile</a></li>
+                                            <li>
+                                                <a href="">
+                                                    <button class="uk-text-bold uk-text-capitalize uk-button uk-button-default uk-margin-small-right custom-color-white" type="button" style=" font-size:1rem; border: none;" uk-toggle="target: #modal-close-default"><span class=""><i class="uk-margin-small-right custom-color-white fa-2x fa fa-file-text-o" aria-hidden="true"></i></span>Register</button>
+                                                </a>
+                                            </li>
                                             <hr class="uk-divider-small uk-margin-small" style="border: 1px solid #fff;">
-                                            <li class="uk-text-bold uk-text-capitalize"><a href="#" class="custom-color-white" style="font-size:1rem;"><span class=""><i class="uk-margin-small-right custom-color-white fa-2x fa fa-sign-out" aria-hidden="true"></i></span>Lock Out</a></li>
+                                            <li>
+                                                <a href="">
+                                                    <button class="uk-text-bold uk-text-capitalize uk-button uk-button-default uk-margin-small-right custom-color-white" type="button" style=" font-size:1rem; border: none;" uk-toggle="target: #modal-close-default1">
+                                                        <span class="">
+                                                            <i class="uk-margin-small-right custom-color-white fa-2x fa fa-sign-out" aria-hidden="true"></i>
+                                                        </span>Log out
+                                                    </button>
+                                                </a>
+                                            </li>
                                         </ul>
                                     </ul>
                                 </div>
+                                <div id="modal-close-default" uk-modal>
+                                    <div class="uk-modal-dialog uk-modal-body">
+                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                                        <div class="form-modal">
+    
+                                            <div class="form-toggle">
+                                                <button id="login-toggle" onclick="toggleLogin()">log in</button>
+                                                <button id="signup-toggle" onclick="toggleSignup()">sign up</button>
+                                            </div>
+                                        
+                                            <div id="login-form">
+                                                <form>
+                                                    <input type="text" placeholder="Enter email or username"/>
+                                                    <input type="password" placeholder="Enter password"/>
+                                                    <button type="button" class="btn login">login</button>
+                                                    <hr/>
+                                        
+                                                </form>
+                                            </div>
+                                        
+                                            <div id="signup-form">
+                                                <form>
+                                                    <input type="email" placeholder="Enter your email"/>
+                                                    <input type="text" placeholder="Choose username"/>
+                                                    <input type="password" placeholder="Create password"/>
+                                                    <button type="button" class="btn signup">create account</button>
+                                                    <p>Clicking <strong>create account</strong> means that you are agree to our <a href="javascript:void(0)">terms of services</a>.</p>
+                                                    <hr/>
+                                                   
+                                                </form>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="modal-close-default1" class="uk-flex-top" uk-modal>
+                                    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                                
+                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                                        <h3>Thank you for visiting</h3>
+                                        <p>It meant so much that you took the time to travel such a long way to see me. My days are always better when I get to be with you. Thank you so much for paying me a visit. I had such a wonderful time and will remember it for the rest of my years.</p>
+                                
+                                    </div>
+                                </div>
                             </li> 
+                            <li style="margin-top:2px">
+                                <a class="uk-margin-small-left uk-hidden@m">
+                                    <svg width="30pt" height="50pt" fill="#ffffff" version="1.1" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m350 0c86.984 0 157.5 70.516 157.5 157.5 0 57.059-30.34 107.03-75.766 134.66 114.77 34.934 198.27 141.64 198.27 267.84h-35c0-135.31-109.69-245-245-245s-245 109.69-245 245h-35c0-126.2 83.496-232.91 198.26-267.88-45.422-27.59-75.762-77.559-75.762-134.62 0-86.984 70.516-157.5 157.5-157.5zm0 35c-67.656 0-122.5 54.844-122.5 122.5s54.844 122.5 122.5 122.5 122.5-54.844 122.5-122.5-54.844-122.5-122.5-122.5z" fill-rule="evenodd"/>
+                                       </svg>
+                                </a>
+                                    <div uk-dropdown="pos: top-right">
+                                        <ul class="uk-nav uk-dropdown-nav">
+                                            <ul class="uk-nav uk-dropdown-nav">
+                                                <li>
+                                                    <a href="">
+                                                        <button class="uk-text-bold uk-text-capitalize uk-button uk-button-default uk-margin-small-right custom-color-white" type="button" style=" font-size:1rem; border: none;" uk-toggle="target: #modal-close-default"><span class=""><i class="uk-margin-small-right custom-color-white fa-2x fa fa-file-text-o" aria-hidden="true"></i></span>Register</button>
+                                                    </a>
+                                                </li>
+                                                <hr class="uk-divider-small uk-margin-small" style="border: 1px solid #fff;">
+                                                <li>
+                                                    <a href="">
+                                                        <button class="uk-text-bold uk-text-capitalize uk-button uk-button-default uk-margin-small-right custom-color-white" type="button" style=" font-size:1rem; border: none;" uk-toggle="target: #modal-close-default1">
+                                                            <span class="">
+                                                                <i class="uk-margin-small-right custom-color-white fa-2x fa fa-sign-out" aria-hidden="true"></i>
+                                                            </span>Log out
+                                                        </button>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </ul>
+                                    </div>
+                            </li>
                             <li style="margin-top:2px">
                                 <a class="uk-margin-small-left uk-hidden@m" uk-toggle="target: #offcanvas-none">
                                     <svg width="30pt" height="50pt" fill="#ffffff" version="1.1" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
@@ -115,8 +185,7 @@
                                             <hr class="uk-margin-small custom-color-white" style="border: 1px solid;border-color: #fff;">
                                             <li>
                                                 <a href="" class="uk-text-capitalize uk-text-bold custom-color-white" style="font-size: 1.2rem;">login</a>
-                                            </li>
-                                            
+                                            </li>                                            
                                         </ul>
                                     </div>
                                 </div>
@@ -128,703 +197,708 @@
             </div>      
         </div>
     </div>
-    <div class="uk-visible@m">
-        <div>
-            <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="min-height: 300; max-height: 600; animation: fade; autoplay: true">
-    
-                <ul class="uk-slideshow-items">
-                    <li style="background-image: url(./image/instagram.webp); background-repeat: no-repeat; background-size: 100% 100%;">
-                        <div class="uk-card uk-card-body uk-child-width-1-2@m"uk-grid>
-                            <div class="">
-                                <div class="uk-card uk-card-body uk-margin-large-top">
-                                    <h3 class="custom-section-banner">Get Free Instagram Followers & Likes</h3>
-                                    <p class="custom-color-white">Easily get 100% FREE and high-quality Instagram followers and likes. No password. No survey. No risk. 100% real and safe.</p>
-                                    <!-- HTML !-->
-                                    <button class="button-64 uk-align-center uk-text-center" role="button"><span class="text">Get Followers & Likes</span></button>
+    <div class="" id="home" onclick="home()">
+        <div class="uk-visible@m">
+            <div>
+                <div class="uk-position-relative uk-visible-toggle" tabindex="-1" uk-slideshow="min-height: 300; max-height: 600; animation: fade; autoplay: true">
+        
+                    <ul class="uk-slideshow-items">
+                        <li style="background-image: url(./image/instagram.webp); background-repeat: no-repeat; background-size: 100% 100%;">
+                            <div class="uk-card uk-card-body uk-child-width-1-2@m"uk-grid>
+                                <div class="">
+                                    <div class="uk-card uk-card-body uk-margin-large-top">
+                                        <h3 class="custom-section-banner">Get Free Instagram Followers & Likes</h3>
+                                        <p class="custom-color-white">Easily get 100% FREE and high-quality Instagram followers and likes. No password. No survey. No risk. 100% real and safe.</p>
+                                        <!-- HTML !-->
+                                        <button class="button-64 uk-align-center uk-text-center" role="button"><span class="text">Get Followers & Likes</span></button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li style="background-image: url(./image/youtube.webp); background-repeat: no-repeat; background-size: 100% 100%;">
-                        <div class="uk-card uk-card-body uk-child-width-1-2@m"uk-grid>
-                            <div class="">
-                                <div class="uk-card uk-card-body uk-margin-large-top">
-                                    <h3 class="custom-section-banner">Get Free Youtube likes & Subscribe</h3>
-                                    <p class="custom-color-white">Easily get 100% FREE and high-quality Youtube Subscribe and likes. No password. No survey. No risk. 100% real and safe.</p>
-                                    <button class="button-64 uk-align-center uk-text-center" role="button"><span class="text">Get Followers & Likes</span></button>
+                        </li>
+                        <li style="background-image: url(./image/youtube.webp); background-repeat: no-repeat; background-size: 100% 100%;">
+                            <div class="uk-card uk-card-body uk-child-width-1-2@m"uk-grid>
+                                <div class="">
+                                    <div class="uk-card uk-card-body uk-margin-large-top">
+                                        <h3 class="custom-section-banner">Get Free Youtube likes & Subscribe</h3>
+                                        <p class="custom-color-white">Easily get 100% FREE and high-quality Youtube Subscribe and likes. No password. No survey. No risk. 100% real and safe.</p>
+                                        <button class="button-64 uk-align-center uk-text-center" role="button"><span class="text">Get Followers & Likes</span></button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                    <li style="background-image: url(./image/fb.webp); background-repeat: no-repeat; background-size: 100% 100%;">
-                        <div class="uk-card uk-card-body uk-child-width-1-2@m"uk-grid>
-                            <div class="" style="display: flex; align-items: center;">
-                                <div class="uk-card uk-card-body uk-margin-large-top">
-                                    <h3 class="custom-section-banner">Get Free Facebook Followers & Likes</h3>
-                                    <p class="custom-color-white">Easily get 100% FREE and high-quality Facebook followers and likes. No password. No survey. No risk. 100% real and safe.</p>
-                                    <!-- HTML !-->
-                                    <button class="button-64 uk-align-center uk-text-center" role="button"><span class="text">Get Followers & Likes</span></button>
+                        </li>
+                        <li style="background-image: url(./image/fb.webp); background-repeat: no-repeat; background-size: 100% 100%;">
+                            <div class="uk-card uk-card-body uk-child-width-1-2@m"uk-grid>
+                                <div class="" style="display: flex; align-items: center;">
+                                    <div class="uk-card uk-card-body uk-margin-large-top">
+                                        <h3 class="custom-section-banner">Get Free Facebook Followers & Likes</h3>
+                                        <p class="custom-color-white">Easily get 100% FREE and high-quality Facebook followers and likes. No password. No survey. No risk. 100% real and safe.</p>
+                                        <!-- HTML !-->
+                                        <button class="button-64 uk-align-center uk-text-center" role="button"><span class="text">Get Followers & Likes</span></button>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </li>
-                </ul>
-    
-                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
-                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
-    
-            </div>
-    
-        </div>
-    </div>
-    <div class="uk-section-muted uk-section uk-visible@m">
-        <div class="uk-container">
-            <h5 class="uk-text-center uk-align-center uk-text-bold uk-margin-remove">HOW TO</h5>
-            <h1 class="uk-text-center uk-align-center uk-text-bold uk-margin-small-top">Get Instagram Free Followers and Likes</h1>
-            <p class="uk-text-center uk-align-center uk-text-bold">We provide unlimited free Instagram followers and free Instagram likes. It’s totally free for you. Getting free<br/> Instagram followers & likes with GetInsita is as simple as ABC.</p>
-            <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body custom-card-border">
-                        <div class="custom-circle uk-text-center uk-align-center">
-                            <i class="fa fa-sign-in uk-margin-small-top custom-icon" aria-hidden="true"></i>
-                        </div>
-                        <h3 class="uk-align-center uk-text-center uk-text-bold uk-margin-small">Step 1</h3>
-                        <p class="uk-text-emphasis uk-align-center uk-text-center uk-margin-small uk-text-bold">Sign Up and Log In</p>
-                    </div>
+                        </li>
+                    </ul>
+        
+                    <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+        
                 </div>
-                <div class="uk-visible@m">
-                    <div class="uk-card uk-card-body" style="display: flex;align-items: center; justify-content: space-around;">
-                        <i class="fa fa-long-arrow-right custom-icon" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div class="uk-hidden@m">
-                    <div class="uk-card uk-card-body" style="display: flex;align-items: center; justify-content: space-around;">
-                        <i class="fa fa-long-arrow-right custom-icon" aria-hidden="true"></i>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body custom-card-border">
-                        <div class="custom-circle uk-text-center uk-align-center">
-                            <i class="fa fa-user-plus uk-margin-small-top custom-icon" aria-hidden="true"></i>
-                        </div>
-                        <h3 class="uk-align-center uk-text-center uk-text-bold uk-margin-small">Step 2</h3>
-                        <p class="uk-text-emphasis uk-align-center uk-text-center uk-margin-small uk-text-bold">Get Free Followers & Likes</p>
-                    </div>
-                </div>                
-            </div>
-            <div class="uk-text-center uk-align-center">
-                <button class="c-button c-button--gooey"> Get Followers & Likes
-                    <div class="c-button__blobs">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    </div>
-                  </button>
-                  <svg style="display: block; height: 0; width: 0;" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <defs>
-                      <filter id="goo">
-                        <feGaussianBlur result="blur" stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
-                        <feColorMatrix result="goo" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" mode="matrix" in="blur"></feColorMatrix>
-                        <feBlend in2="goo" in="SourceGraphic"></feBlend>
-                      </filter>
-                    </defs>
-                  </svg>
+        
             </div>
         </div>
-    </div>
-    <div class="uk-section uk-visible@m">
-        <div class="uk-container">
-            <h1 class="uk-text-center uk-align-center uk-text-bold uk-margin-small-top">Get Free Followers and Likes</h1>
-            <section class="card container grid">
-                <div class="card__container grid">
-                    <!--==================== CARD 1 ====================-->
-                    <article class="card__content grid">
-                        <div class="card__pricing">
-                            <div class="card__pricing-number">
-                                <span class="card__pricing-symbol">$</span>0
+        <div class="uk-section-muted uk-section uk-visible@m">
+            <div class="uk-container">
+                <h5 class="uk-text-center uk-align-center uk-text-bold uk-margin-remove">HOW TO</h5>
+                <h1 class="uk-text-center uk-align-center uk-text-bold uk-margin-small-top">Get Instagram Free Followers and Likes</h1>
+                <p class="uk-text-center uk-align-center uk-text-bold">We provide unlimited free Instagram followers and free Instagram likes. It’s totally free for you. Getting free<br/> Instagram followers & likes with GetInsita is as simple as ABC.</p>
+                <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body custom-card-border">
+                            <div class="custom-circle uk-text-center uk-align-center">
+                                <i class="fa fa-sign-in uk-margin-small-top custom-icon" aria-hidden="true"></i>
                             </div>
-                            <span class="card__pricing-month">/unlimited</span>
+                            <h3 class="uk-align-center uk-text-center uk-text-bold uk-margin-small">Step 1</h3>
+                            <p class="uk-text-emphasis uk-align-center uk-text-center uk-margin-small uk-text-bold">Sign Up and Log In</p>
                         </div>
-        
-                        <header class="card__header">
-                            <div class="card__header-circle grid">
-                                <img class="card__header-img" src="https://img.icons8.com/fluency/100/000000/instagram-new.png"/>
-                            </div>
-                            
-                            <span class="card__header-subtitle">Free plan</span>
-                            <h1 class="card__header-title uk-margin-remove">Basic</h1>
-                        </header>
-                        
-                        <ul class="card__list grid uk-margin-small">
-                            <li class="card__list-item">
-                                <i class="uil uil-check card__list-icon"></i>
-                                <p class="card__list-description uk-margin-remove">Unlimited & Forever Free</p>
-                            </li>
-                            <li class="card__list-item">
-                                <i class="uil uil-check card__list-icon"></i>
-                                <p class="card__list-description uk-margin-remove">Automatic & Organic</p>
-                            </li>
-                            <li class="card__list-item">
-                                <i class="uil uil-check card__list-icon"></i>
-                                <p class="card__list-description uk-margin-remove">Gain Real-time Followers</p>
-                            </li>
-                            <li class="card__list-item">
-                                <i class="uil uil-check card__list-icon"></i>
-                                <p class="card__list-description uk-margin-remove">Earn Coins on Instagram Followers App</p>
-                            </li>
-                            <li class="card__list-item">
-                                <i class="uil uil-check card__list-icon"></i>
-                                <p class="card__list-description uk-margin-remove">Deliver within 24 Hours</p>
-                            </li>
-                            <li class="card__list-item">
-                                <i class="uil uil-check card__list-icon"></i>
-                                <p class="card__list-description uk-margin-remove">No Password, No Verification</p>
-                            </li>
-                            <li class="card__list-item">
-                                <i class="uil uil-check card__list-icon"></i>
-                                <p class="card__list-description uk-margin-remove">Profile Must Be Public</p>
-                            </li>
-                        </ul>
-        
-                        <button class="card__button">Choose this plan</button>
-                    </article>
-        
-                    <!--==================== CARD 2 ====================-->
-                    <article class="card__content grid">
-                        <div class="card__pricing">
-                            <div class="card__pricing-number">
-                                <span class="card__pricing-symbol">$</span>0
-                            </div>
-                            <span class="card__pricing-month">/unlimited</span>
+                    </div>
+                    <div class="uk-visible@m">
+                        <div class="uk-card uk-card-body" style="display: flex;align-items: center; justify-content: space-around;">
+                            <i class="fa fa-long-arrow-right custom-icon" aria-hidden="true"></i>
                         </div>
-        
-                        <header class="card__header">
-                            <div class="card__header-circle grid uk-margin-small">
-                                <img class="card__header-img" src="https://img.icons8.com/fluency/100/000000/facebook.png"/>
-                            </div>
-                            
-                            <span class="card__header-subtitle">Free plan</span>
-                            <h1 class="card__header-title uk-margin-remove">Basic</h1>
-                        </header>
-                        
-                        <ul class="card__list grid">
-                            <li class="card__list-item">
-                                <i class="uil uil-check card__list-icon"></i>
-                                <p class="card__list-description uk-margin-remove">Unlimited & Forever Free</p>
-                            </li>
-                            <li class="card__list-item">
-                                <i class="uil uil-check card__list-icon"></i>
-                                <p class="card__list-description uk-margin-remove">Automatic & Organic</p>
-                            </li>
-                            <li class="card__list-item">
-                                <i class="uil uil-check card__list-icon"></i>
-                                <p class="card__list-description uk-margin-remove">Gain Real-time Followers</p>
-                            </li>
-                            <li class="card__list-item">
-                                <i class="uil uil-check card__list-icon"></i>
-                                <p class="card__list-description uk-margin-remove">Earn Coins on Instagram Followers App</p>
-                            </li>
-                            <li class="card__list-item">
-                                <i class="uil uil-check card__list-icon"></i>
-                                <p class="card__list-description uk-margin-remove">Deliver within 24 Hours</p>
-                            </li>
-                            <li class="card__list-item">
-                                <i class="uil uil-check card__list-icon"></i>
-                                <p class="card__list-description uk-margin-remove">No Password, No Verification</p>
-                            </li>
-                            <li class="card__list-item">
-                                <i class="uil uil-check card__list-icon"></i>
-                                <p class="card__list-description uk-margin-remove">Profile Must Be Public</p>
-                            </li>
-                        </ul>
-        
-        
-                        <button class="card__button">Choose this plan</button>
-                    </article>
-        
-                    <!--==================== CARD 3 ====================-->
-                    <article class="card__content grid">
-                        <div class="card__pricing">
-                            <div class="card__pricing-number">
-                                <span class="card__pricing-symbol">$</span>0
-                            </div>
-                            <span class="card__pricing-month">/unlimited</span>
+                    </div>
+                    <div class="uk-hidden@m">
+                        <div class="uk-card uk-card-body" style="display: flex;align-items: center; justify-content: space-around;">
+                            <i class="fa fa-long-arrow-right custom-icon" aria-hidden="true"></i>
                         </div>
-        
-                        <header class="card__header">
-                            <div class="card__header-circle grid uk-margin-small">
-                                <img class="card__header-img" src="https://img.icons8.com/fluency/100/000000/youtube-play.png"/>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body custom-card-border">
+                            <div class="custom-circle uk-text-center uk-align-center">
+                                <i class="fa fa-user-plus uk-margin-small-top custom-icon" aria-hidden="true"></i>
                             </div>
-                            
-                            <span class="card__header-subtitle">Free plan</span>
-                            <h1 class="card__header-title uk-margin-remove">Basic</h1>
-                        </header>
-                        
-                        <ul class="card__list grid">
-                            <li class="card__list-item">
-                                <i class="uil uil-check card__list-icon"></i>
-                                <p class="card__list-description uk-margin-remove">Unlimited & Forever Free</p>
-                            </li>
-                            <li class="card__list-item">
-                                <i class="uil uil-check card__list-icon"></i>
-                                <p class="card__list-description uk-margin-remove">Automatic & Organic</p>
-                            </li>
-                            <li class="card__list-item">
-                                <i class="uil uil-check card__list-icon"></i>
-                                <p class="card__list-description uk-margin-remove">Gain Real-time Followers</p>
-                            </li>
-                            <li class="card__list-item">
-                                <i class="uil uil-check card__list-icon"></i>
-                                <p class="card__list-description uk-margin-remove">Earn Coins on Instagram Followers App</p>
-                            </li>
-                            <li class="card__list-item">
-                                <i class="uil uil-check card__list-icon"></i>
-                                <p class="card__list-description uk-margin-remove">Deliver within 24 Hours</p>
-                            </li>
-                            <li class="card__list-item">
-                                <i class="uil uil-check card__list-icon"></i>
-                                <p class="card__list-description uk-margin-remove">No Password, No Verification</p>
-                            </li>
-                            <li class="card__list-item">
-                                <i class="uil uil-check card__list-icon"></i>
-                                <p class="card__list-description uk-margin-remove">Profile Must Be Public</p>
-                            </li>
-                        </ul>
-        
-                        <button class="card__button">Choose this plan</button>
-                    </article>
+                            <h3 class="uk-align-center uk-text-center uk-text-bold uk-margin-small">Step 2</h3>
+                            <p class="uk-text-emphasis uk-align-center uk-text-center uk-margin-small uk-text-bold">Get Free Followers & Likes</p>
+                        </div>
+                    </div>                
                 </div>
-            </section>
+                <div class="uk-text-center uk-align-center">
+                    <button class="c-button c-button--gooey"> Get Followers & Likes
+                        <div class="c-button__blobs">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        </div>
+                      </button>
+                      <svg style="display: block; height: 0; width: 0;" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                          <filter id="goo">
+                            <feGaussianBlur result="blur" stdDeviation="10" in="SourceGraphic"></feGaussianBlur>
+                            <feColorMatrix result="goo" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" mode="matrix" in="blur"></feColorMatrix>
+                            <feBlend in2="goo" in="SourceGraphic"></feBlend>
+                          </filter>
+                        </defs>
+                      </svg>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="uk-section uk-section-muted uk-visible@m">
-        <div class="uk-container">
-            <h1 class="uk-text-center uk-align-center uk-text-bold uk-margin-small-top">Get Free Followers & Likes<br/> Paid Version</h1>
-            <div id="price">
-                <div class="plan">
-                    <div class="plan-inner">
+        <div class="uk-section uk-visible@m">
+            <div class="uk-container">
+                <h1 class="uk-text-center uk-align-center uk-text-bold uk-margin-small-top">Get Free Followers and Likes</h1>
+                <section class="card container grid">
+                    <div class="card__container grid">
+                        <!--==================== CARD 1 ====================-->
+                        <article class="card__content grid">
+                            <div class="card__pricing">
+                                <div class="card__pricing-number">
+                                    <span class="card__pricing-symbol">$</span>0
+                                </div>
+                                <span class="card__pricing-month">/unlimited</span>
+                            </div>
+            
+                            <header class="card__header">
+                                <div class="card__header-circle grid">
+                                    <img class="card__header-img" src="https://img.icons8.com/fluency/100/000000/instagram-new.png"/>
+                                </div>
+                                
+                                <span class="card__header-subtitle">Free plan</span>
+                                <h1 class="card__header-title uk-margin-remove">Basic</h1>
+                            </header>
+                            
+                            <ul class="card__list grid uk-margin-small">
+                                <li class="card__list-item">
+                                    <i class="uil uil-check card__list-icon"></i>
+                                    <p class="card__list-description uk-margin-remove">Unlimited & Forever Free</p>
+                                </li>
+                                <li class="card__list-item">
+                                    <i class="uil uil-check card__list-icon"></i>
+                                    <p class="card__list-description uk-margin-remove">Automatic & Organic</p>
+                                </li>
+                                <li class="card__list-item">
+                                    <i class="uil uil-check card__list-icon"></i>
+                                    <p class="card__list-description uk-margin-remove">Gain Real-time Followers</p>
+                                </li>
+                                <li class="card__list-item">
+                                    <i class="uil uil-check card__list-icon"></i>
+                                    <p class="card__list-description uk-margin-remove">Earn Coins on Instagram Followers App</p>
+                                </li>
+                                <li class="card__list-item">
+                                    <i class="uil uil-check card__list-icon"></i>
+                                    <p class="card__list-description uk-margin-remove">Deliver within 24 Hours</p>
+                                </li>
+                                <li class="card__list-item">
+                                    <i class="uil uil-check card__list-icon"></i>
+                                    <p class="card__list-description uk-margin-remove">No Password, No Verification</p>
+                                </li>
+                                <li class="card__list-item">
+                                    <i class="uil uil-check card__list-icon"></i>
+                                    <p class="card__list-description uk-margin-remove">Profile Must Be Public</p>
+                                </li>
+                            </ul>
+            
+                            <button class="card__button">Choose this plan</button>
+                        </article>
+            
+                        <!--==================== CARD 2 ====================-->
+                        <article class="card__content grid">
+                            <div class="card__pricing">
+                                <div class="card__pricing-number">
+                                    <span class="card__pricing-symbol">$</span>0
+                                </div>
+                                <span class="card__pricing-month">/unlimited</span>
+                            </div>
+            
+                            <header class="card__header">
+                                <div class="card__header-circle grid uk-margin-small">
+                                    <img class="card__header-img" src="https://img.icons8.com/fluency/100/000000/facebook.png"/>
+                                </div>
+                                
+                                <span class="card__header-subtitle">Free plan</span>
+                                <h1 class="card__header-title uk-margin-remove">Basic</h1>
+                            </header>
+                            
+                            <ul class="card__list grid">
+                                <li class="card__list-item">
+                                    <i class="uil uil-check card__list-icon"></i>
+                                    <p class="card__list-description uk-margin-remove">Unlimited & Forever Free</p>
+                                </li>
+                                <li class="card__list-item">
+                                    <i class="uil uil-check card__list-icon"></i>
+                                    <p class="card__list-description uk-margin-remove">Automatic & Organic</p>
+                                </li>
+                                <li class="card__list-item">
+                                    <i class="uil uil-check card__list-icon"></i>
+                                    <p class="card__list-description uk-margin-remove">Gain Real-time Followers</p>
+                                </li>
+                                <li class="card__list-item">
+                                    <i class="uil uil-check card__list-icon"></i>
+                                    <p class="card__list-description uk-margin-remove">Earn Coins on Instagram Followers App</p>
+                                </li>
+                                <li class="card__list-item">
+                                    <i class="uil uil-check card__list-icon"></i>
+                                    <p class="card__list-description uk-margin-remove">Deliver within 24 Hours</p>
+                                </li>
+                                <li class="card__list-item">
+                                    <i class="uil uil-check card__list-icon"></i>
+                                    <p class="card__list-description uk-margin-remove">No Password, No Verification</p>
+                                </li>
+                                <li class="card__list-item">
+                                    <i class="uil uil-check card__list-icon"></i>
+                                    <p class="card__list-description uk-margin-remove">Profile Must Be Public</p>
+                                </li>
+                            </ul>
+            
+            
+                            <button class="card__button">Choose this plan</button>
+                        </article>
+            
+                        <!--==================== CARD 3 ====================-->
+                        <article class="card__content grid">
+                            <div class="card__pricing">
+                                <div class="card__pricing-number">
+                                    <span class="card__pricing-symbol">$</span>0
+                                </div>
+                                <span class="card__pricing-month">/unlimited</span>
+                            </div>
+            
+                            <header class="card__header">
+                                <div class="card__header-circle grid uk-margin-small">
+                                    <img class="card__header-img" src="https://img.icons8.com/fluency/100/000000/youtube-play.png"/>
+                                </div>
+                                
+                                <span class="card__header-subtitle">Free plan</span>
+                                <h1 class="card__header-title uk-margin-remove">Basic</h1>
+                            </header>
+                            
+                            <ul class="card__list grid">
+                                <li class="card__list-item">
+                                    <i class="uil uil-check card__list-icon"></i>
+                                    <p class="card__list-description uk-margin-remove">Unlimited & Forever Free</p>
+                                </li>
+                                <li class="card__list-item">
+                                    <i class="uil uil-check card__list-icon"></i>
+                                    <p class="card__list-description uk-margin-remove">Automatic & Organic</p>
+                                </li>
+                                <li class="card__list-item">
+                                    <i class="uil uil-check card__list-icon"></i>
+                                    <p class="card__list-description uk-margin-remove">Gain Real-time Followers</p>
+                                </li>
+                                <li class="card__list-item">
+                                    <i class="uil uil-check card__list-icon"></i>
+                                    <p class="card__list-description uk-margin-remove">Earn Coins on Instagram Followers App</p>
+                                </li>
+                                <li class="card__list-item">
+                                    <i class="uil uil-check card__list-icon"></i>
+                                    <p class="card__list-description uk-margin-remove">Deliver within 24 Hours</p>
+                                </li>
+                                <li class="card__list-item">
+                                    <i class="uil uil-check card__list-icon"></i>
+                                    <p class="card__list-description uk-margin-remove">No Password, No Verification</p>
+                                </li>
+                                <li class="card__list-item">
+                                    <i class="uil uil-check card__list-icon"></i>
+                                    <p class="card__list-description uk-margin-remove">Profile Must Be Public</p>
+                                </li>
+                            </ul>
+            
+                            <button class="card__button">Choose this plan</button>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="uk-section uk-section-muted uk-visible@m">
+            <div class="uk-container">
+                <h1 class="uk-text-center uk-align-center uk-text-bold uk-margin-small-top">Get Free Followers & Likes<br/> Paid Version</h1>
+                <div id="price">
+                    <div class="plan">
+                        <div class="plan-inner">
+                            <div class="hot">10% Off</div>
+                            <div class="entry-title">
+                                <h3>Most Popular</h3>
+                                <div class="price">50<span>Followers</span>
+                                </div>
+                            </div>
+                            <div class="entry-content">
+                                <ul>
+                                    <li><strong>30 Day</strong> 50 Followers $0.99/ Per Day</li>
+                                    <li><strong>60 Day</strong> 50 Followers $0.76/ Per Day</li>
+                                    <li><strong>90 Day</strong> 50 Followers $0.69/ Per Day</li>
+                                    <li>Follow Back 0 Profiles</li>
+                                    <li>Plan is 100% Automatic</li>
+                                    <li>24/7 Support</li>
+                                </ul>
+                            </div>
+                            <div class="uk-padding-small">
+                                <a href="#">
+                                    <button class="card__button">Buy Followers Now</button>
+                                </a> 
+                            </div>               
+                        </div>
+                    </div>
+                    <div class="plan basic">
+                        <div class="plan-inner">
+                            <div class="hot">10% Off</div>
+                            <div class="entry-title">
+                                <h3>Professional</h3>
+                                <div class="price">150<span>Followers</span>
+                                </div>
+                            </div>
+                            <div class="entry-content">
+                                <ul>
+                                    <li><strong>30 Day</strong> 150 Followers $1.99/ Per Day</li>
+                                    <li><strong>60 Day</strong> 150 Followers $1.36/ Per Day</li>
+                                    <li><strong>90 Day</strong> 150 Followers $1.21/ Per Day</li>
+                                    <li>Gain Real-time Followers</li>
+                                    <li>Automatic & Organic</li>
+                                    <li>Deliver within 24 Hours</li>
+                                </ul>
+                            </div>
+                            <div class="uk-padding-small">
+                                <a href="#">
+                                    <button class="card__button">Buy Followers Now</button>
+                                </a> 
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="plan standard">
+                      <div class="plan-inner">
                         <div class="hot">10% Off</div>
                         <div class="entry-title">
-                            <h3>Most Popular</h3>
-                            <div class="price">50<span>Followers</span>
-                            </div>
+                          <h3>Enterprise</h3>
+                          <div class="price">200<span>Followers</span>
+                          </div>
                         </div>
                         <div class="entry-content">
-                            <ul>
-                                <li><strong>30 Day</strong> 50 Followers $0.99/ Per Day</li>
-                                <li><strong>60 Day</strong> 50 Followers $0.76/ Per Day</li>
-                                <li><strong>90 Day</strong> 50 Followers $0.69/ Per Day</li>
-                                <li>Follow Back 0 Profiles</li>
-                                <li>Plan is 100% Automatic</li>
-                                <li>24/7 Support</li>
-                            </ul>
-                        </div>
-                        <div class="uk-padding-small">
-                            <a href="#">
-                                <button class="card__button">Buy Followers Now</button>
-                            </a> 
-                        </div>               
-                    </div>
-                </div>
-                <div class="plan basic">
-                    <div class="plan-inner">
-                        <div class="hot">10% Off</div>
-                        <div class="entry-title">
-                            <h3>Professional</h3>
-                            <div class="price">150<span>Followers</span>
-                            </div>
-                        </div>
-                        <div class="entry-content">
-                            <ul>
-                                <li><strong>30 Day</strong> 150 Followers $1.99/ Per Day</li>
-                                <li><strong>60 Day</strong> 150 Followers $1.36/ Per Day</li>
-                                <li><strong>90 Day</strong> 150 Followers $1.21/ Per Day</li>
-                                <li>Gain Real-time Followers</li>
-                                <li>Automatic & Organic</li>
-                                <li>Deliver within 24 Hours</li>
-                            </ul>
+                          <ul>
+                            
+                            <li><strong>30 Day</strong> 200 Followers $2.29/ Per Day</li>
+                            <li><strong>60 Day</strong> 200 Followers $1.66/ Per Day</li>
+                            <li><strong>90 Day</strong> 200 Followers $1.49/ Per Day</li>
+                            <li>No Password, No Verification</li>
+                            <li>Profile Must Be Public</li>
+                            <li>Real Followers, No Bots!</li>
+                          </ul>
                         </div>
                         <div class="uk-padding-small">
                             <a href="#">
                                 <button class="card__button">Buy Followers Now</button>
                             </a> 
                         </div> 
-                    </div>
-                </div>
-                <div class="plan standard">
-                  <div class="plan-inner">
-                    <div class="hot">10% Off</div>
-                    <div class="entry-title">
-                      <h3>Enterprise</h3>
-                      <div class="price">200<span>Followers</span>
                       </div>
-                    </div>
-                    <div class="entry-content">
-                      <ul>
-                        
-                        <li><strong>30 Day</strong> 200 Followers $2.29/ Per Day</li>
-                        <li><strong>60 Day</strong> 200 Followers $1.66/ Per Day</li>
-                        <li><strong>90 Day</strong> 200 Followers $1.49/ Per Day</li>
-                        <li>No Password, No Verification</li>
-                        <li>Profile Must Be Public</li>
-                        <li>Real Followers, No Bots!</li>
-                      </ul>
-                    </div>
-                    <div class="uk-padding-small">
-                        <a href="#">
+                    </div>        
+                </div>
+            </div>
+        </div>
+        <div class="uk-section uk-visible@m">
+            <div class="uk-container">
+                <h5 class="uk-text-center uk-align-center uk-text-bold uk-margin-remove">GET A VARIETY OF</h5>
+                <h1 class="uk-text-center uk-align-center uk-text-bold uk-margin-small-top">Followers Likes Services</h1>
+                <div id="tsum-tabs">
+                  <main>                    
+                    <input id="tab1" type="radio" name="tabs" checked>
+                    <label for="tab1">Facebook followers and Likes</label>
+                      
+                    <input id="tab3" type="radio" name="tabs">
+                    <label for="tab3">Youtube Subscribe and Likes</label>
+                    
+                    <input id="tab2" type="radio" name="tabs">
+                    <label for="tab2">Instagram Followers and Likes</label>
+                      
+                    
+                    <section id="content1">
+                        <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+                            <div>
+                                <div class="uk-card uk-card-default custom-card-bg uk-card-body">
+                                    <h3 class="uk-card-title">Instant Facebook Followers</h3>
+                                    <p>Associated with the blazing-fast delivery, getting Instant Facebook followers by GetInsita means you can receive them nearly in an instant. Multiple followers plans are available for you like 1000 instant IG followers, 2000 instant IG followers and 3000 instant IG followers, etc. Get thousands of Facebook followers within minutes by GetInsita.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default custom-card-bg uk-card-body">
+                                    <h3 class="uk-card-title">Auto Facebook <br/>Followers</h3>
+                                    <p>Auto Facebook followers enable your account to receive followers daily. This plan is more organic and similar to the natural process of getting followers on Facebook. The whole process would be riskless and gradual. Increase Facebook followers gradually by daily followers plan right away.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default custom-card-bg uk-card-body">
+                                    <h3 class="uk-card-title">Local Facebook<br/> Followers</h3>
+                                    <p>How to get local Facebook followers? You are now able to select where your followers come from by GetInsita local Facebook followers. Reaching Facebook users in every corner of the world and making them your followers is practical. Getting US, UK or India Face book followers is no big deal for GetInsita from now on.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
                             <button class="card__button">Buy Followers Now</button>
-                        </a> 
-                    </div> 
+                        </div>
+                    </section>
+                      
+                    <section id="content2">
+                        <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+                            <div>
+                                <div class="uk-card uk-card-default custom-card-bg uk-card-body">
+                                    <h3 class="uk-card-title">Instant Instagram Followers</h3>
+                                    <p>Associated with the blazing-fast delivery, getting Instant Instagram followers by GetInsita means you can receive them nearly in an instant. Multiple followers plans are available for you like 1000 instant IG followers, 2000 instant IG followers and 3000 instant IG followers, etc. Get thousands of Instagram followers within minutes by GetInsita.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default custom-card-bg uk-card-body">
+                                    <h3 class="uk-card-title">Auto Instagram <br/>Followers</h3>
+                                    <p>Auto Instagram followers enable your account to receive followers daily. This plan is more organic and similar to the natural process of getting followers on Instagram. The whole process would be riskless and gradual. Increase Instagram followers gradually by daily followers plan right away.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default custom-card-bg uk-card-body">
+                                    <h3 class="uk-card-title">Local Instagram<br/> Followers</h3>
+                                    <p>How to get local Instagram followers? You are now able to select where your followers come from by GetInsita local Instagram followers. Reaching Instagram users in every corner of the world and making them your followers is practical. Getting US, UK or India Instagram followers is no big deal for GetInsita from now on.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
+                            <button class="card__button">Buy Followers Now</button>
+                        </div>
+                    </section>
+                      
+                    <section id="content3">
+                        <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+                            <div>
+                                <div class="uk-card uk-card-default custom-card-bg uk-card-body">
+                                    <h3 class="uk-card-title">Instant You Tube Followers</h3>
+                                    <p>Associated with the blazing-fast delivery, getting Instant You Tube followers by GetInsita means you can receive them nearly in an instant. Multiple followers plans are available for you like 1000 instant IG followers, 2000 instant IG followers and 3000 instant IG followers, etc. Get thousands of You Tube followers within minutes by GetInsita.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default custom-card-bg uk-card-body">
+                                    <h3 class="uk-card-title">Auto You Tube <br/>Followers</h3>
+                                    <p>Auto You Tube followers enable your account to receive followers daily. This plan is more organic and similar to the natural process of getting followers on You Tube. The whole process would be riskless and gradual. Increase You Tube followers gradually by daily followers plan right away.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="uk-card uk-card-default custom-card-bg uk-card-body">
+                                    <h3 class="uk-card-title">Local You Tube<br/> Followers</h3>
+                                    <p>How to get local You Tube followers? You are now able to select where your followers come from by GetInsita local You Tube followers. Reaching You Tube users in every corner of the world and making them your followers is practical. Getting US, UK or India You Tube followers is no big deal for GetInsita from now on.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
+                            <button class="card__button">Buy Followers Now</button>
+                        </div>
+                    </section>
+                      
+                  </main>
                   </div>
-                </div>        
             </div>
         </div>
-    </div>
-    <div class="uk-section uk-visible@m">
-        <div class="uk-container">
-            <h5 class="uk-text-center uk-align-center uk-text-bold uk-margin-remove">GET A VARIETY OF</h5>
-            <h1 class="uk-text-center uk-align-center uk-text-bold uk-margin-small-top">Followers Likes Services</h1>
-            <div id="tsum-tabs">
-              <main>                    
-                <input id="tab1" type="radio" name="tabs" checked>
-                <label for="tab1">Facebook followers and Likes</label>
-                  
-                <input id="tab3" type="radio" name="tabs">
-                <label for="tab3">Youtube Subscribe and Likes</label>
-                
-                <input id="tab2" type="radio" name="tabs">
-                <label for="tab2">Instagram Followers and Likes</label>
-                  
-                
-                <section id="content1">
-                    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
-                        <div>
-                            <div class="uk-card uk-card-default custom-card-bg uk-card-body">
-                                <h3 class="uk-card-title">Instant Facebook Followers</h3>
-                                <p>Associated with the blazing-fast delivery, getting Instant Facebook followers by GetInsita means you can receive them nearly in an instant. Multiple followers plans are available for you like 1000 instant IG followers, 2000 instant IG followers and 3000 instant IG followers, etc. Get thousands of Facebook followers within minutes by GetInsita.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-card uk-card-default custom-card-bg uk-card-body">
-                                <h3 class="uk-card-title">Auto Facebook <br/>Followers</h3>
-                                <p>Auto Facebook followers enable your account to receive followers daily. This plan is more organic and similar to the natural process of getting followers on Facebook. The whole process would be riskless and gradual. Increase Facebook followers gradually by daily followers plan right away.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-card uk-card-default custom-card-bg uk-card-body">
-                                <h3 class="uk-card-title">Local Facebook<br/> Followers</h3>
-                                <p>How to get local Facebook followers? You are now able to select where your followers come from by GetInsita local Facebook followers. Reaching Facebook users in every corner of the world and making them your followers is practical. Getting US, UK or India Face book followers is no big deal for GetInsita from now on.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
-                        <button class="card__button">Buy Followers Now</button>
-                    </div>
-                </section>
-                  
-                <section id="content2">
-                    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
-                        <div>
-                            <div class="uk-card uk-card-default custom-card-bg uk-card-body">
-                                <h3 class="uk-card-title">Instant Instagram Followers</h3>
-                                <p>Associated with the blazing-fast delivery, getting Instant Instagram followers by GetInsita means you can receive them nearly in an instant. Multiple followers plans are available for you like 1000 instant IG followers, 2000 instant IG followers and 3000 instant IG followers, etc. Get thousands of Instagram followers within minutes by GetInsita.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-card uk-card-default custom-card-bg uk-card-body">
-                                <h3 class="uk-card-title">Auto Instagram <br/>Followers</h3>
-                                <p>Auto Instagram followers enable your account to receive followers daily. This plan is more organic and similar to the natural process of getting followers on Instagram. The whole process would be riskless and gradual. Increase Instagram followers gradually by daily followers plan right away.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-card uk-card-default custom-card-bg uk-card-body">
-                                <h3 class="uk-card-title">Local Instagram<br/> Followers</h3>
-                                <p>How to get local Instagram followers? You are now able to select where your followers come from by GetInsita local Instagram followers. Reaching Instagram users in every corner of the world and making them your followers is practical. Getting US, UK or India Instagram followers is no big deal for GetInsita from now on.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
-                        <button class="card__button">Buy Followers Now</button>
-                    </div>
-                </section>
-                  
-                <section id="content3">
-                    <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
-                        <div>
-                            <div class="uk-card uk-card-default custom-card-bg uk-card-body">
-                                <h3 class="uk-card-title">Instant You Tube Followers</h3>
-                                <p>Associated with the blazing-fast delivery, getting Instant You Tube followers by GetInsita means you can receive them nearly in an instant. Multiple followers plans are available for you like 1000 instant IG followers, 2000 instant IG followers and 3000 instant IG followers, etc. Get thousands of You Tube followers within minutes by GetInsita.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-card uk-card-default custom-card-bg uk-card-body">
-                                <h3 class="uk-card-title">Auto You Tube <br/>Followers</h3>
-                                <p>Auto You Tube followers enable your account to receive followers daily. This plan is more organic and similar to the natural process of getting followers on You Tube. The whole process would be riskless and gradual. Increase You Tube followers gradually by daily followers plan right away.</p>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="uk-card uk-card-default custom-card-bg uk-card-body">
-                                <h3 class="uk-card-title">Local You Tube<br/> Followers</h3>
-                                <p>How to get local You Tube followers? You are now able to select where your followers come from by GetInsita local You Tube followers. Reaching You Tube users in every corner of the world and making them your followers is practical. Getting US, UK or India You Tube followers is no big deal for GetInsita from now on.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
-                        <button class="card__button">Buy Followers Now</button>
-                    </div>
-                </section>
-                  
-              </main>
-              </div>
-        </div>
-    </div>
-    <div class="uk-section uk-visible@m">
-        <div class="uk-container">
-            <img src="./image/follower.png" alt="" width="100%">
-        </div>
-    </div>
-    <div class="uk-section uk-visible@m">
-        <div class="uk-container uk-align-center">
-            <h2 class="uk-margin-remove uk-text-bold uk-text-center">What Makes Our Get Instagram Followers and Likes<br/> Services Outstanding</h2>
-            <div class="uk-child-width-1-2@m uk-grid-small uk-margin-medium-top" uk-grid style="display: flex;align-items: center;">
-                <div>
-                    <div class="uk-card uk-card-body uk-card-hover">
-                        <h2 class="uk-text-bold">Safety & Privacy</h2>
-                        <p>Safety & Privacy are important. GetInsita is developed by our professional and experienced team, 100% safe and clean. No virus. No leak. No risk. We value and protect your privacy. You can get organic growth of real Instagram followers and likes in our best security system.</p>
-                        <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
-                            <button class="card__button">Buy Followers Now</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="uk-align-center uk-text-center">
-                    <div class="uk-card">
-                        <img src="./image/safety.gif" alt="">
-                    </div>
-                </div>
+        <div class="uk-section uk-visible@m">
+            <div class="uk-container">
+                <img src="./image/follower.png" alt="" width="100%">
             </div>
         </div>
-    </div>
-    <div class="uk-section uk-section-muted uk-visible@m">
-        <div class="uk-container uk-align-center">
-            <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match uk-margin-medium-top" uk-grid style="display: flex;align-items: center;">
-                <div class="uk-align-center uk-text-center">
-                    <div class="uk-card">
-                        <img src="./image/more user.gif" alt="">
+        <div class="uk-section uk-visible@m">
+            <div class="uk-container uk-align-center">
+                <h2 class="uk-margin-remove uk-text-bold uk-text-center">What Makes Our Get Instagram Followers and Likes<br/> Services Outstanding</h2>
+                <div class="uk-child-width-1-2@m uk-grid-small uk-margin-medium-top" uk-grid style="display: flex;align-items: center;">
+                    <div>
+                        <div class="uk-card uk-card-body uk-card-hover">
+                            <h2 class="uk-text-bold">Safety & Privacy</h2>
+                            <p>Safety & Privacy are important. GetInsita is developed by our professional and experienced team, 100% safe and clean. No virus. No leak. No risk. We value and protect your privacy. You can get organic growth of real Instagram followers and likes in our best security system.</p>
+                            <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
+                                <button class="card__button">Buy Followers Now</button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-body uk-card-hover">
-                        <h2 class="uk-text-bold">High Quality - Real & Organic</h2>
-                        <p><b>Not Fake</b> Our users are exactly real Instagram users, not fake Instagram bot users generated by anything. The followers and likes you get are from only active & real Instagram accounts.</p>
-                        <p><b>No Risk</b> When followers increasing, likes will be increased at the same time. All followers and likes will be sent in a reasonable time, organically and naturally. No risk of being banned or punished.</p>
-                        <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
-                            <button class="card__button">Buy Followers Now</button>
+                    <div class="uk-align-center uk-text-center">
+                        <div class="uk-card">
+                            <img src="./image/safety.gif" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="uk-section uk-visible@m">
-        <div class="uk-container uk-align-center">
-            <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match uk-margin-medium-top" uk-grid style="display: flex;align-items: center;">
-                <div>
-                    <div class="uk-card uk-card-body uk-card-hover">
-                        <h2 class="uk-text-bold">Unlimited Free</h2>
-                        <p>You don’t need to spend money to get followers & likes. This get Instagram followers app is 100% FREE. What you need is the coin. When you log into GetInsita, you’ll get hundreds of coins instantly that you can use to buy followers & likes. You can earn more coins by doing easy coin tasks on GetInsita.</p>
-                        <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
-                            <button class="card__button">Buy Followers Now</button>
+        <div class="uk-section uk-section-muted uk-visible@m">
+            <div class="uk-container uk-align-center">
+                <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match uk-margin-medium-top" uk-grid style="display: flex;align-items: center;">
+                    <div class="uk-align-center uk-text-center">
+                        <div class="uk-card">
+                            <img src="./image/more user.gif" alt="">
                         </div>
                     </div>
-                </div>
-                <div class="uk-align-center uk-text-center">
-                    <div class="uk-card">
-                        <img src="./image/app.gif" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="uk-section uk-section-muted uk-visible@m">
-        <div class="uk-container uk-align-center">
-            <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match uk-margin-medium-top" uk-grid style="display: flex;align-items: center;">
-                <div class="uk-align-center uk-text-center">
-                    <div class="uk-card">
-                        <img src="./image/step.gif" alt="">
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-body uk-card-hover">
-                        <p class="uk-text-uppercase uk-text-bold uk-margin-small-bottom">HOW DO WE</p>
-                        <h2 class="uk-text-bold uk-margin-remove">Make "FREE" Possible</h2>
-                        <p>Real-person gathering here to follow and like each other. Everyone can get coins by following others or liking their posts. With the coins, you can get unlimited free Instagram followers and likes for your own Instagram accounts and posts. Sounds good? GetInsita app download to get unlimited free followers and likes. It’s easy and 100% safe!</p>
-                        <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
-                            <button class="card__button">Buy Followers Now</button>
+                    <div>
+                        <div class="uk-card uk-card-body uk-card-hover">
+                            <h2 class="uk-text-bold">High Quality - Real & Organic</h2>
+                            <p><b>Not Fake</b> Our users are exactly real Instagram users, not fake Instagram bot users generated by anything. The followers and likes you get are from only active & real Instagram accounts.</p>
+                            <p><b>No Risk</b> When followers increasing, likes will be increased at the same time. All followers and likes will be sent in a reasonable time, organically and naturally. No risk of being banned or punished.</p>
+                            <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
+                                <button class="card__button">Buy Followers Now</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="uk-section uk-visible@m">
-        <div class="uk-container">
-            <h2 class="uk-text-bold uk-margin-remove uk-text-center">More Advantage</h2>
-            <div class="uk-margin-top uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <img src="https://img.icons8.com/bubbles/80/000000/apple-clock.png"/>
-                        <h3 class="uk-card-title uk-margin-small">Instant Delivery</h3>
-                        <p>All your Insta followers and likes will be delivered in a reasonable time. Real followers will follow you in an instant when they see your follower or like request. You’ll see the changes within minutes.</p>
+        <div class="uk-section uk-visible@m">
+            <div class="uk-container uk-align-center">
+                <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match uk-margin-medium-top" uk-grid style="display: flex;align-items: center;">
+                    <div>
+                        <div class="uk-card uk-card-body uk-card-hover">
+                            <h2 class="uk-text-bold">Unlimited Free</h2>
+                            <p>You don’t need to spend money to get followers & likes. This get Instagram followers app is 100% FREE. What you need is the coin. When you log into GetInsita, you’ll get hundreds of coins instantly that you can use to buy followers & likes. You can earn more coins by doing easy coin tasks on GetInsita.</p>
+                            <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
+                                <button class="card__button">Buy Followers Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-align-center uk-text-center">
+                        <div class="uk-card">
+                            <img src="./image/app.gif" alt="">
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/80/000000/external-business-web-store-flaticons-lineal-color-flat-icons.png"/>
-                        <h3 class="uk-card-title uk-margin-small">24/7 Support</h3>
-                        <p>Our specialized support is always available. In case you have any questions about our products or meet any difficulties when working with the system, please do not hesitate to contact us at all times.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body">
-                        <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/80/000000/external-team-mobile-app-development-flaticons-lineal-color-flat-icons.png"/>
-                        <h3 class="uk-card-title uk-margin-small">Experienced Team</h3>
-                        <p>Our team is an experienced and professional team in the sector for years. We know the rules of the industry and we act accordingly. We offer instant solutions to help you get followers and likes.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
-                <button class="card__button">Buy Followers Now</button>
             </div>
         </div>
-    </div>
-    <div class="uk-section uk-visible@m">
-        <img src="./image/following.png" alt="" width="100%">
-    </div>
-    <div class="uk-section uk-visible@m">
-        <div class="uk-container">
-            <h2 class="uk-text-bold uk-margin-remove uk-text-center">6 Qualities That Free Instagram Followers Should Have</h2>
-            <p>When you wisely use free Instagram followers tools to grow your followers, it doesn’t mean you should compromise the quality of the followers you get. It would be best if you increase your followers count and guarantee quality at the same time. Only in this way can you take your account into long-term growth. Here are 6 qualities that you should focus on when you increase free Instagram followers.</p>
-            <ul uk-accordion>
-                <li class="uk-open">
-                    <a class="uk-accordion-title" href="#">Real and Engaged & Unlimited</a>
-                    <div class="uk-accordion-content">
-                        <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
-                            <div>
-                                <div class="uk-card uk-card-hover uk-card-body">
-                                    <h3 class="uk-card-title">Real and Engaged</h3>
-                                    <p>The essential quality of free Instagram followers is reality. That means the free followers should have authentic accounts. If you get bot-created followers to add to your account, it will lower your account's quality and expose your account negatively which risks your account being suspended or banned by Instagram. So, it’s good to avoid fake followers at all cost. Thankfully, GetInsita can help you grow actual human followers. No bot users are allowed in the community. When you request free Instagram followers from it, your profile will immediately be shown to authentic users with similar interests. So, the followers you get are real people with real accounts. They are interested and engaged by liking and commenting on your posts which increases the engagement bar and helps you go viral on Instagram.</p>
+        <div class="uk-section uk-section-muted uk-visible@m">
+            <div class="uk-container uk-align-center">
+                <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match uk-margin-medium-top" uk-grid style="display: flex;align-items: center;">
+                    <div class="uk-align-center uk-text-center">
+                        <div class="uk-card">
+                            <img src="./image/step.gif" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-body uk-card-hover">
+                            <p class="uk-text-uppercase uk-text-bold uk-margin-small-bottom">HOW DO WE</p>
+                            <h2 class="uk-text-bold uk-margin-remove">Make "FREE" Possible</h2>
+                            <p>Real-person gathering here to follow and like each other. Everyone can get coins by following others or liking their posts. With the coins, you can get unlimited free Instagram followers and likes for your own Instagram accounts and posts. Sounds good? GetInsita app download to get unlimited free followers and likes. It’s easy and 100% safe!</p>
+                            <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
+                                <button class="card__button">Buy Followers Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="uk-section uk-visible@m">
+            <div class="uk-container">
+                <h2 class="uk-text-bold uk-margin-remove uk-text-center">More Advantage</h2>
+                <div class="uk-margin-top uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <img src="https://img.icons8.com/bubbles/80/000000/apple-clock.png"/>
+                            <h3 class="uk-card-title uk-margin-small">Instant Delivery</h3>
+                            <p>All your Insta followers and likes will be delivered in a reasonable time. Real followers will follow you in an instant when they see your follower or like request. You’ll see the changes within minutes.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/80/000000/external-business-web-store-flaticons-lineal-color-flat-icons.png"/>
+                            <h3 class="uk-card-title uk-margin-small">24/7 Support</h3>
+                            <p>Our specialized support is always available. In case you have any questions about our products or meet any difficulties when working with the system, please do not hesitate to contact us at all times.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body">
+                            <img src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/80/000000/external-team-mobile-app-development-flaticons-lineal-color-flat-icons.png"/>
+                            <h3 class="uk-card-title uk-margin-small">Experienced Team</h3>
+                            <p>Our team is an experienced and professional team in the sector for years. We know the rules of the industry and we act accordingly. We offer instant solutions to help you get followers and likes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
+                    <button class="card__button">Buy Followers Now</button>
+                </div>
+            </div>
+        </div>
+        <div class="uk-section uk-visible@m">
+            <img src="./image/following.png" alt="" width="100%">
+        </div>
+        <div class="uk-section uk-visible@m">
+            <div class="uk-container">
+                <h2 class="uk-text-bold uk-margin-remove uk-text-center">6 Qualities That Free Instagram Followers Should Have</h2>
+                <p>When you wisely use free Instagram followers tools to grow your followers, it doesn’t mean you should compromise the quality of the followers you get. It would be best if you increase your followers count and guarantee quality at the same time. Only in this way can you take your account into long-term growth. Here are 6 qualities that you should focus on when you increase free Instagram followers.</p>
+                <ul uk-accordion>
+                    <li class="uk-open">
+                        <a class="uk-accordion-title" href="#">Real and Engaged & Unlimited</a>
+                        <div class="uk-accordion-content">
+                            <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
+                                <div>
+                                    <div class="uk-card uk-card-hover uk-card-body">
+                                        <h3 class="uk-card-title">Real and Engaged</h3>
+                                        <p>The essential quality of free Instagram followers is reality. That means the free followers should have authentic accounts. If you get bot-created followers to add to your account, it will lower your account's quality and expose your account negatively which risks your account being suspended or banned by Instagram. So, it’s good to avoid fake followers at all cost. Thankfully, GetInsita can help you grow actual human followers. No bot users are allowed in the community. When you request free Instagram followers from it, your profile will immediately be shown to authentic users with similar interests. So, the followers you get are real people with real accounts. They are interested and engaged by liking and commenting on your posts which increases the engagement bar and helps you go viral on Instagram.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div class="uk-card uk-card-hover uk-card-body">
-                                    <h3 class="uk-card-title">Unlimited</h3>
-                                    <p>It’s hard to keep growing followers on Instagram when you already have enough count. So, you can take advantage of the Instagram followers tools to help you out of this difficulty. Although some tools offer free Instagram followers, they are limited per day. Or some services bring free trial and you can get some free Instagram followers with them. But if you want to claim more free followers, you will be asked to update to premium members. That’s bad news when you try to maximize the growing number of your followers. While there is good news, GetInsita offers unlimited Instagram followers. There is no drama on it. Users in the community use coins to get free Instagram followers. You can get countless Instagram followers with unlimited coins easily.</p>
+                                <div>
+                                    <div class="uk-card uk-card-hover uk-card-body">
+                                        <h3 class="uk-card-title">Unlimited</h3>
+                                        <p>It’s hard to keep growing followers on Instagram when you already have enough count. So, you can take advantage of the Instagram followers tools to help you out of this difficulty. Although some tools offer free Instagram followers, they are limited per day. Or some services bring free trial and you can get some free Instagram followers with them. But if you want to claim more free followers, you will be asked to update to premium members. That’s bad news when you try to maximize the growing number of your followers. While there is good news, GetInsita offers unlimited Instagram followers. There is no drama on it. Users in the community use coins to get free Instagram followers. You can get countless Instagram followers with unlimited coins easily.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-                <li>
-                    <a class="uk-accordion-title" href="#">Targeted & Nutritious</a>
-                    <div class="uk-accordion-content">
-                        <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
-                            <div>
-                                <div class="uk-card uk-card-hover uk-card-body">
-                                    <h3 class="uk-card-title">Targeted</h3>
-                                    <p>If you want to build your personal or business brand on Instagram, growing untargeted and fake followers to your account will add no value to your brand building. That’s because the random or bot followers can’t really like your feed or spend their money on your product. Worse yet, your back-followers will be disappointed in you when they find you are increasing these followers. They will unfollow you and run away. So, growing targeted followers is essential in your brand-building strategy. When you own plenty of targeted followers who are potentially interested in your niche, you can have more chances to get their favors to your profile. Even better, they can help you boost sales when you post new product-related feeds on your page.</p>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">Targeted & Nutritious</a>
+                        <div class="uk-accordion-content">
+                            <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
+                                <div>
+                                    <div class="uk-card uk-card-hover uk-card-body">
+                                        <h3 class="uk-card-title">Targeted</h3>
+                                        <p>If you want to build your personal or business brand on Instagram, growing untargeted and fake followers to your account will add no value to your brand building. That’s because the random or bot followers can’t really like your feed or spend their money on your product. Worse yet, your back-followers will be disappointed in you when they find you are increasing these followers. They will unfollow you and run away. So, growing targeted followers is essential in your brand-building strategy. When you own plenty of targeted followers who are potentially interested in your niche, you can have more chances to get their favors to your profile. Even better, they can help you boost sales when you post new product-related feeds on your page.</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div>
-                                <div class="uk-card uk-card-hover uk-card-body">
-                                    <h3 class="uk-card-title">Nutritious</h3>
-                                    <p>Before growing free Instagram followers, you should figure out whether the followers you get are nutritious for your account. Some Instagram followers apps can make your follower count keep rising consistently. It might seem your account is getting boosted, but that’s totally unhealthy. That’s because they add low-quality followers to your account, bring backlash to your account's growth. Then you will be left behind by other competitors with high-quality followers. So, you should add values to your account by building real and active followers naturally in the long run. When you have a considerable number of these high-quality followers, your account can be popular. You will have higher chances to be featured on Instagram Explore Page to reach organic traffic. Then your Instagram will grow like a snowball.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li>
-                    <a class="uk-accordion-title" href="#">No-Drop & Legit</a>
-                    <div class="uk-accordion-content">
-                        <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
-                            <div>
-                                <div class="uk-card uk-card-hover uk-card-body">
-                                    <h3 class="uk-card-title">No-Drop</h3>
-                                    <p>Whether you are using Instagram followers tools or other smart strategies to get new followers, your followers will disappear inevitably. If you use some tools to grow followers, they may add bots or ghost followers to your account. Instagram is regularly scanning and cleaning up these bot or fake accounts. If you develop real followers, you can’t avoid them unfollowing you either. That’s because they are not unfeeling machines. They may withdraw their followings for some unknown reasons.
-                                        Fortunately, you can choose a service that reduces and limits such situations happening. GetInsita will never disappoint you. It offers real and free Instagram followers who will never be identified as bots and be deleted by Instagram. If they change their ideas and unfollow you, it will refill within a few days.</p>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="uk-card uk-card-hover uk-card-body">
-                                    <h3 class="uk-card-title">Legit</h3>
-                                    <p>If you increase free Instagram followers with unproven external IG apps, the chances are high that they may send bots followers to your account quickly. These followers are definitely illegal and unsafe. Instagram may detect your follower count surging only in a short time which will raise an alarm and suspicion. Then you will have the risk of being banned or punished for a spam maker. So, if you grow your followers legally, then it will be an entirely different story. When you increase authentic and active followers reasonably and organically, you will get real human interaction and engagement in your activities on Instagram. In this way, your account can be grown legally and safely without violating the Instagram Terms of Service.</p>
+                                <div>
+                                    <div class="uk-card uk-card-hover uk-card-body">
+                                        <h3 class="uk-card-title">Nutritious</h3>
+                                        <p>Before growing free Instagram followers, you should figure out whether the followers you get are nutritious for your account. Some Instagram followers apps can make your follower count keep rising consistently. It might seem your account is getting boosted, but that’s totally unhealthy. That’s because they add low-quality followers to your account, bring backlash to your account's growth. Then you will be left behind by other competitors with high-quality followers. So, you should add values to your account by building real and active followers naturally in the long run. When you have a considerable number of these high-quality followers, your account can be popular. You will have higher chances to be featured on Instagram Explore Page to reach organic traffic. Then your Instagram will grow like a snowball.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
-
-        </div>
-    </div>
-    <div class="uk-section uk-section-muted uk-visible@m">
-        <div class="uk-container">
-            <h2 class="uk-text-bold uk-margin-remove uk-text-center">3 Qualities That Free Instagram Likes Should Have</h2>
-            <p class="uk-text-center">Unlike free Instagram followers by other platforms, which free is their biggest spotlight. GetInsita free likes have other 3 qualities that you cannot refuse.</p>
-            <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
-                <div>
-                    <div class="uk-card uk-card-default custom-card-bg uk-card-body">
-                        <img src="https://img.icons8.com/external-others-phat-plus/64/000000/external-authentic-authentication-color-line-others-phat-plus-11.png"/>
-                        <h3 class="uk-card-title uk-margin-remove-top">Authentic</h3>
-                        <p>Foremost of all is the authenticity of likes. No bots likes, or fake likes. Just real Instagram likes by users who are interested in your content.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default custom-card-bg uk-card-body">
-                        <img src="https://img.icons8.com/external-fill-outline-pongsakorn-tan/64/000000/external-instant-supermarket-fill-outline-pongsakorn-tan.png"/>
-                        <h3 class="uk-card-title uk-margin-remove-top">Instant</h3>
-                        <p>Likes can travel at the speed of light to arrive at your account. You will never be let down when you need free Instagram likes to promote your posts’ performance by using this get likes on the Instagram app.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default custom-card-bg uk-card-body">
-                        <img src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-app-infographic-and-chart-xnimrodx-lineal-color-xnimrodx.png"/>
-                        <h3 class="uk-card-title uk-margin-remove-top">Easy-to-Get</h3>
-                        <p>Likes are easy to get in this Instagram likes app. Use the lots of coins given to you and then choose a likes plan. That’s all!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
-                <button class="card__button">Buy Followers Now</button>
-            </div>
-        </div>   
-    </div>
-    <div class="uk-section uk-visible@m">
-        <div class="uk-container">    
-            <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
-                <div>
-                    <h3 class="uk-text-bold">Services</h3>
-                    <p class="uk-margin-remove">Get Instagram Followers</p>
-                    <p class="uk-margin-remove">Get Auto Instagram Followers</p>
-                    <p class="uk-margin-remove">Get Instagram Likes</p>
-                </div>
-                <div>
-                    <h3 class="uk-text-bold">Resources</h3>
-                    <p class="uk-margin-remove">Login</p>
-                    <p class="uk-margin-remove">FAQs</p>
-                    <p class="uk-margin-remove">Blogs</p>
-                </div>
-                <div>
-                    <h3 class="uk-text-bold">App Download</h3>
-                    <img src="./image/google.png" alt="" width="100%" height="50%">
-                    <img src="./image/google1.png" alt="" width="100%" height="50%">
-                </div>
-            </div>
+                    </li>
+                    <li>
+                        <a class="uk-accordion-title" href="#">No-Drop & Legit</a>
+                        <div class="uk-accordion-content">
+                            <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" uk-grid>
+                                <div>
+                                    <div class="uk-card uk-card-hover uk-card-body">
+                                        <h3 class="uk-card-title">No-Drop</h3>
+                                        <p>Whether you are using Instagram followers tools or other smart strategies to get new followers, your followers will disappear inevitably. If you use some tools to grow followers, they may add bots or ghost followers to your account. Instagram is regularly scanning and cleaning up these bot or fake accounts. If you develop real followers, you can’t avoid them unfollowing you either. That’s because they are not unfeeling machines. They may withdraw their followings for some unknown reasons.
+                                            Fortunately, you can choose a service that reduces and limits such situations happening. GetInsita will never disappoint you. It offers real and free Instagram followers who will never be identified as bots and be deleted by Instagram. If they change their ideas and unfollow you, it will refill within a few days.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="uk-card uk-card-hover uk-card-body">
+                                        <h3 class="uk-card-title">Legit</h3>
+                                        <p>If you increase free Instagram followers with unproven external IG apps, the chances are high that they may send bots followers to your account quickly. These followers are definitely illegal and unsafe. Instagram may detect your follower count surging only in a short time which will raise an alarm and suspicion. Then you will have the risk of being banned or punished for a spam maker. So, if you grow your followers legally, then it will be an entirely different story. When you increase authentic and active followers reasonably and organically, you will get real human interaction and engagement in your activities on Instagram. In this way, your account can be grown legally and safely without violating the Instagram Terms of Service.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
     
+            </div>
+        </div>
+        <div class="uk-section uk-section-muted uk-visible@m">
+            <div class="uk-container">
+                <h2 class="uk-text-bold uk-margin-remove uk-text-center">3 Qualities That Free Instagram Likes Should Have</h2>
+                <p class="uk-text-center">Unlike free Instagram followers by other platforms, which free is their biggest spotlight. GetInsita free likes have other 3 qualities that you cannot refuse.</p>
+                <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default custom-card-bg uk-card-body">
+                            <img src="https://img.icons8.com/external-others-phat-plus/64/000000/external-authentic-authentication-color-line-others-phat-plus-11.png"/>
+                            <h3 class="uk-card-title uk-margin-remove-top">Authentic</h3>
+                            <p>Foremost of all is the authenticity of likes. No bots likes, or fake likes. Just real Instagram likes by users who are interested in your content.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default custom-card-bg uk-card-body">
+                            <img src="https://img.icons8.com/external-fill-outline-pongsakorn-tan/64/000000/external-instant-supermarket-fill-outline-pongsakorn-tan.png"/>
+                            <h3 class="uk-card-title uk-margin-remove-top">Instant</h3>
+                            <p>Likes can travel at the speed of light to arrive at your account. You will never be let down when you need free Instagram likes to promote your posts’ performance by using this get likes on the Instagram app.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-default custom-card-bg uk-card-body">
+                            <img src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/000000/external-app-infographic-and-chart-xnimrodx-lineal-color-xnimrodx.png"/>
+                            <h3 class="uk-card-title uk-margin-remove-top">Easy-to-Get</h3>
+                            <p>Likes are easy to get in this Instagram likes app. Use the lots of coins given to you and then choose a likes plan. That’s all!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
+                    <button class="card__button">Buy Followers Now</button>
+                </div>
+            </div>   
+        </div>
+        <div class="uk-section uk-visible@m">
+            <div class="uk-container">    
+                <div class="uk-grid-match uk-child-width-1-3@m" uk-grid>
+                    <div>
+                        <h3 class="uk-text-bold">Services</h3>
+                        <p class="uk-margin-remove">Get Instagram Followers</p>
+                        <p class="uk-margin-remove">Get Auto Instagram Followers</p>
+                        <p class="uk-margin-remove">Get Instagram Likes</p>
+                    </div>
+                    <div>
+                        <h3 class="uk-text-bold">Resources</h3>
+                        <p class="uk-margin-remove">Login</p>
+                        <p class="uk-margin-remove">FAQs</p>
+                        <p class="uk-margin-remove">Blogs</p>
+                    </div>
+                    <div>
+                        <h3 class="uk-text-bold">App Download</h3>
+                        <img src="./image/google.png" alt="" width="100%" height="50%">
+                        <img src="./image/google1.png" alt="" width="100%" height="50%">
+                    </div>
+                </div>
+        
+            </div>
         </div>
     </div>
     <!-- mobile view design -->
     <div class="uk-hidden@m">
+        <div>
+            <img src="./image/mobile banner.webp" alt="">
+        </div>
        <div class="uk-section">
            <div class="uk-container">
             <ul class="uk-subnav uk-subnav-pill" uk-switcher>
@@ -835,7 +909,7 @@
             <ul class="uk-switcher uk-margin">
                 <li>
                     <div class="uk-card uk-card-default uk-width-1-2@m">
-                        <div class="uk-card-header" style="background-image: linear-gradient( 109.6deg, rgba(116,18,203,1) 0%, rgba(230,46,131,1) 91.2% );">
+                        <div class="uk-card-header" style="background-image: linear-gradient( 109.6deg, #833ab4 0%, #fd1d1d 70%, #fcb045 91.2% );">
                             <div class="uk-grid-small uk-flex-middle" uk-grid>
                                 <div class="uk-width-auto">
                                     <img src="https://img.icons8.com/ios/50/ffffff/instagram-new--v1.png"/>                                   
@@ -969,5 +1043,6 @@
        </div>       
         
     </div>
+    
 </body>
 </html>
