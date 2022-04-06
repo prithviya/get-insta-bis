@@ -49,7 +49,7 @@
                             <li>
                                 <a href="" class="uk-text-capitalize uk-visible@m">Blog</a>
                             </li>
-                            <li class="uk-margin">
+                            <!-- <li class="uk-margin">
                                 <button class="uk-button uk-visible@m uk-button-default uk-text-capitalize custom-login-button">Login</button>
                                 <div uk-dropdown="pos: top-right">
                                     <ul class="uk-nav uk-dropdown-nav">
@@ -61,13 +61,16 @@
                                         </ul>
                                     </ul>
                                 </div>
-                            </li>
+                            </li> -->
                             <li>
                                 <a href="" class="uk-hidden@m uk-text-capitalize">Getinsta</button>
                                 </a>
                             </li>
-                            <li class="uk-margin">
-                                <button class="uk-button uk-hidden@m uk-button-default uk-text-capitalize custom-login-button">Login</button>
+                            <li style="margin-top: 25px;">
+                                <!-- <button class="uk-button uk-hidden@m uk-button-default uk-text-capitalize custom-login-button">Login</button> -->
+                                <span class="uk-margin-xlarge-left">
+                                    <i class="fa fa-user-circle fa-2x custom-color-white" aria-hidden="true"></i>
+                                </span>
                                 <div uk-dropdown="pos: top-right">
                                     <ul class="uk-nav uk-dropdown-nav">
                                         <ul class="uk-nav uk-dropdown-nav">
@@ -78,7 +81,46 @@
                                         </ul>
                                     </ul>
                                 </div>
-                            </li>                                                       
+                            </li> 
+                            <li style="margin-top:2px">
+                                <a class="uk-margin-small-left uk-hidden@m" uk-toggle="target: #offcanvas-none">
+                                    <svg width="30pt" height="50pt" fill="#ffffff" version="1.1" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m560 96.25h-420c-9.3789 0-18.043-5.0039-22.734-13.125-4.6875-8.1211-4.6875-18.129 0-26.25 4.6914-8.1211 13.355-13.125 22.734-13.125h420c9.3789 0 18.043 5.0039 22.734 13.125 4.6875 8.1211 4.6875 18.129 0 26.25-4.6914 8.1211-13.355 13.125-22.734 13.125zm26.25 183.75c0-6.9609-2.7656-13.641-7.6875-18.562s-11.602-7.6875-18.562-7.6875h-245c-9.3789 0-18.043 5.0039-22.734 13.125-4.6875 8.1211-4.6875 18.129 0 26.25 4.6914 8.1211 13.355 13.125 22.734 13.125h245c6.9609 0 13.641-2.7656 18.562-7.6875s7.6875-11.602 7.6875-18.562zm0 210c0-6.9609-2.7656-13.641-7.6875-18.562s-11.602-7.6875-18.562-7.6875h-420c-9.3789 0-18.043 5.0039-22.734 13.125-4.6875 8.1211-4.6875 18.129 0 26.25 4.6914 8.1211 13.355 13.125 22.734 13.125h420c6.9609 0 13.641-2.7656 18.562-7.6875s7.6875-11.602 7.6875-18.562z"/>
+                                    </svg>
+                                </a>
+
+                                <div id="offcanvas-none" uk-offcanvas="mode: slide; overlay: true">
+                                    <div class="uk-offcanvas-bar uk-flex uk-flex-column">    
+                                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+                                        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                                            <li>
+                                                <a href="" class="uk-text-capitalize uk-text-bold custom-color-white" style="font-size: 1.2rem;">home</a>
+                                            </li>
+                                            <hr class="uk-margin-small custom-color-white" style="border: 1px solid;border-color: #fff;">
+                                            <li>
+                                                <a href="" class="uk-text-capitalize uk-text-bold custom-color-white" style="font-size: 1.2rem;">About us</a>
+                                            </li>
+                                            <hr class="uk-margin-small custom-color-white" style="border: 1px solid;border-color: #fff;">
+                                            <li>
+                                                <a href="" class="uk-text-capitalize uk-text-bold custom-color-white" style="font-size: 1.2rem;">our services</a>
+                                            </li>
+                                            <hr class="uk-margin-small custom-color-white" style="border: 1px solid;border-color: #fff;">
+                                            <li>
+                                                <a href="" class="uk-text-capitalize uk-text-bold custom-color-white" style="font-size: 1.2rem;">contact us</a>
+                                            </li>
+                                            <hr class="uk-margin-small custom-color-white" style="border: 1px solid;border-color: #fff;">
+                                            <li>
+                                                <a href="" class="uk-text-capitalize uk-text-bold custom-color-white" style="font-size: 1.2rem;">wallet</a>
+                                            </li>
+                                            <hr class="uk-margin-small custom-color-white" style="border: 1px solid;border-color: #fff;">
+                                            <li>
+                                                <a href="" class="uk-text-capitalize uk-text-bold custom-color-white" style="font-size: 1.2rem;">login</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>                                                      
                         </ul>
                     </div>
                     <!-- mobile view -->
@@ -140,7 +182,7 @@
             <h5 class="uk-text-center uk-align-center uk-text-bold uk-margin-remove">HOW TO</h5>
             <h1 class="uk-text-center uk-align-center uk-text-bold uk-margin-small-top">Get Instagram Free Followers and Likes</h1>
             <p class="uk-text-center uk-align-center uk-text-bold">We provide unlimited free Instagram followers and free Instagram likes. It’s totally free for you. Getting free<br/> Instagram followers & likes with GetInsita is as simple as ABC.</p>
-            <div class="uk-child-width-1-3@m uk-grid-small uk-grid-match" uk-grid>
+            <div class="uk-child-width-1-4@m uk-grid-small uk-grid-match" uk-grid>
                 <div>
                     <div class="uk-card uk-card-default uk-card-body custom-card-border">
                         <div class="custom-circle uk-text-center uk-align-center">
