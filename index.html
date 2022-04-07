@@ -125,35 +125,31 @@
                                 </div>
                             </li> 
                             <li style="margin-top:2px">
-                                <a class="uk-margin-small-left uk-hidden@m">
-                                    <svg width="30pt" height="50pt" fill="#ffffff" version="1.1" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="m350 0c86.984 0 157.5 70.516 157.5 157.5 0 57.059-30.34 107.03-75.766 134.66 114.77 34.934 198.27 141.64 198.27 267.84h-35c0-135.31-109.69-245-245-245s-245 109.69-245 245h-35c0-126.2 83.496-232.91 198.26-267.88-45.422-27.59-75.762-77.559-75.762-134.62 0-86.984 70.516-157.5 157.5-157.5zm0 35c-67.656 0-122.5 54.844-122.5 122.5s54.844 122.5 122.5 122.5 122.5-54.844 122.5-122.5-54.844-122.5-122.5-122.5z" fill-rule="evenodd"/>
-                                       </svg>
-                                </a>
-                                    <div uk-dropdown="pos: top-right">
-                                        <ul class="uk-nav uk-dropdown-nav">
-                                            <ul class="uk-nav uk-dropdown-nav">
-                                                <li>
-                                                    <a href="">
-                                                        <button class="uk-text-bold uk-text-capitalize uk-button uk-button-default uk-margin-small-right custom-color-white" type="button" style=" font-size:1rem; border: none;" uk-toggle="target: #modal-close-default"><span class=""><i class="uk-margin-small-right custom-color-white fa-2x fa fa-file-text-o" aria-hidden="true"></i></span>Register</button>
-                                                    </a>
-                                                </li>
-                                                <hr class="uk-divider-small uk-margin-small" style="border: 1px solid #fff;">
-                                                <li>
-                                                    <a href="">
-                                                        <button class="uk-text-bold uk-text-capitalize uk-button uk-button-default uk-margin-small-right custom-color-white" type="button" style=" font-size:1rem; border: none;" uk-toggle="target: #modal-close-default1">
-                                                            <span class="">
-                                                                <i class="uk-margin-small-right custom-color-white fa-2x fa fa-sign-out" aria-hidden="true"></i>
-                                                            </span>Log out
-                                                        </button>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </ul>
+                                <a class="uk-margin-medium-left uk-hidden@m"  href="#modal-center" uk-toggle>
+                                    <button class="uk-button uk-button-primary" style="border-radius: 10px;">login</button>
+                                    <div id="modal-center" class="uk-flex-top" uk-modal>
+                                        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                                    
+                                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                                    
+                                            <div class="">
+                                                <h1 class="uk-text-center">Login</h1>
+                                                <form action="">
+                                                    <div class="uk-margin">
+                                                        <input class="uk-input" type="text" placeholder="mobile number" style="border-bottom-color:1px solid grey;">
+                                                    </div>
+                                                    <div class="uk-margin uk-align-center uktext-center"> 
+                                                        <button class="uk-button uk-button-primary uk-text-bold uk-text-center uk-align-center" style="border-radius: 15px; color: #fff !important;">Submit</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                    
+                                        </div>
                                     </div>
+                                </a>
                             </li>
                             <li style="margin-top:2px">
-                                <a class="uk-margin-small-left uk-hidden@m" uk-toggle="target: #offcanvas-none">
+                                <a class="uk-hidden@m uk-padding-remove" uk-toggle="target: #offcanvas-none">
                                     <svg width="30pt" height="50pt" fill="#ffffff" version="1.1" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
                                         <path d="m560 96.25h-420c-9.3789 0-18.043-5.0039-22.734-13.125-4.6875-8.1211-4.6875-18.129 0-26.25 4.6914-8.1211 13.355-13.125 22.734-13.125h420c9.3789 0 18.043 5.0039 22.734 13.125 4.6875 8.1211 4.6875 18.129 0 26.25-4.6914 8.1211-13.355 13.125-22.734 13.125zm26.25 183.75c0-6.9609-2.7656-13.641-7.6875-18.562s-11.602-7.6875-18.562-7.6875h-245c-9.3789 0-18.043 5.0039-22.734 13.125-4.6875 8.1211-4.6875 18.129 0 26.25 4.6914 8.1211 13.355 13.125 22.734 13.125h245c6.9609 0 13.641-2.7656 18.562-7.6875s7.6875-11.602 7.6875-18.562zm0 210c0-6.9609-2.7656-13.641-7.6875-18.562s-11.602-7.6875-18.562-7.6875h-420c-9.3789 0-18.043 5.0039-22.734 13.125-4.6875 8.1211-4.6875 18.129 0 26.25 4.6914 8.1211 13.355 13.125 22.734 13.125h420c6.9609 0 13.641-2.7656 18.562-7.6875s7.6875-11.602 7.6875-18.562z"/>
                                     </svg>
@@ -822,9 +818,9 @@
        <div class="uk-section">
            <div class="uk-container">
             <ul class="uk-subnav uk-subnav-pill" uk-switcher>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Youtube</a></li>
+                <li><a href="#" class="instagram">Instagram</a></li>
+                <li><a href="#" class="facebook">Facebook</a></li>
+                <li><a href="#" class="youtube">Youtube</a></li>
             </ul>
             <ul class="uk-switcher uk-margin">
                 <li>
@@ -844,7 +840,7 @@
                                 <div id="myQuestions">
                                     <div class="uk-margin">
                                         <label for="" class="uk-margin-bottom uk-text-bold">Choose a Category</label>
-                                        <select class="uk-select">
+                                        <select class="uk-select" style="border-radius: 25px;">
                                             <option value="cat1">Category 01</option>
                                             <option value="cat2">Category 02</option>
                                             <option value="cat3">Category 03</option>
@@ -855,7 +851,7 @@
                                           <label>Choose an Order</label>
                                         </div>
                                         <div>
-                                          <select class="uk-select">
+                                          <select class="uk-select" style="border-radius: 25px;">
                                             <option value=''>Order 01</option>
                                             <option value=''>Order 02</option>
                                             <option value=''>Order 03</option>
@@ -863,7 +859,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+                                <div class="uk-margin">
+                                    <div>
+                                        <div class="uk-tile uk-tile-primary uk-padding-small" style="border-radius: 25px;">
+                                            <p class="uk-h4" style="color:white !important;">Total</p>
+                                        </div>
+                                    </div>
+                                </div>                                
                             </form>
                         </div>
                         <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
@@ -888,7 +890,7 @@
                                 <div id="myQuestions">
                                     <div class="uk-margin">
                                         <label for="" class="uk-margin-bottom uk-text-bold">Choose a Category</label>
-                                        <select class="uk-select">
+                                        <select class="uk-select" style="border-radius: 25px;">
                                             <option value="cat1">Category 01</option>
                                             <option value="cat2">Category 02</option>
                                             <option value="cat3">Category 03</option>
@@ -899,14 +901,21 @@
                                           <label>Choose an Order</label>
                                         </div>
                                         <div>
-                                          <select class="uk-select">
+                                          <select class="uk-select" style="border-radius: 25px;">
                                             <option value=''>Order 01</option>
                                             <option value=''>Order 02</option>
                                             <option value=''>Order 03</option>
                                           </select>
                                         </div>
                                     </div>
-                                </div>                                
+                                </div>
+                                <div class="uk-margin">
+                                    <div>
+                                        <div class="uk-tile uk-tile-primary uk-padding-small" style="border-radius: 25px;">
+                                            <p class="uk-h4" style="color:white !important;">Total</p>
+                                        </div>
+                                    </div>
+                                </div>                                 
                             </form>
                         </div>
                         <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
@@ -931,7 +940,7 @@
                                 <div id="myQuestions">
                                     <div class="uk-margin">
                                         <label for="" class="uk-margin-bottom uk-text-bold">Choose a Category</label>
-                                        <select class="uk-select">
+                                        <select class="uk-select" style="border-radius: 25px;">
                                             <option value="cat1">Category 01</option>
                                             <option value="cat2">Category 02</option>
                                             <option value="cat3">Category 03</option>
@@ -942,7 +951,7 @@
                                           <label>Choose an Order</label>
                                         </div>
                                         <div>
-                                          <select class="uk-select">
+                                          <select class="uk-select" style="border-radius: 25px;">
                                             <option value=''>Order 01</option>
                                             <option value=''>Order 02</option>
                                             <option value=''>Order 03</option>
@@ -950,7 +959,13 @@
                                         </div>
                                     </div>
                                 </div>
-                                
+                                <div class="uk-margin">
+                                    <div>
+                                        <div class="uk-tile uk-tile-primary uk-padding-small" style="border-radius: 25px;">
+                                            <p class="uk-h4" style="color:white !important;">Total</p>
+                                        </div>
+                                    </div>
+                                </div> 
                             </form>
                         </div>
                         <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
