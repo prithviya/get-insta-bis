@@ -1,19 +1,17 @@
-
-// toggle
-function toggleSignup(){
-   document.getElementById("login-toggle").style.backgroundColor="#fff";
-    document.getElementById("login-toggle").style.color="#222";
-    document.getElementById("signup-toggle").style.backgroundColor="#57b846";
-    document.getElementById("signup-toggle").style.color="#fff";
-    document.getElementById("login-form").style.display="none";
-    document.getElementById("signup-form").style.display="block";
-}
-
-function toggleLogin(){
-    document.getElementById("login-toggle").style.backgroundColor="#57B846";
-    document.getElementById("login-toggle").style.color="#fff";
-    document.getElementById("signup-toggle").style.backgroundColor="#fff";
-    document.getElementById("signup-toggle").style.color="#222";
-    document.getElementById("signup-form").style.display="none";
-    document.getElementById("login-form").style.display="block";
-}
+function setFocus(on) {
+    var element = document.activeElement;
+    if (on) {
+      setTimeout(function () {
+        element.parentNode.classList.add("focus");
+      });
+    } else {
+      let box = document.querySelector(".input-box");
+      box.classList.remove("focus");
+      $("input").each(function () {
+        var $input = $(this);
+        var $parent = $input.closest(".input-box");
+        if ($input.val()) $parent.addClass("focus");
+        else $parent.removeClass("focus");
+      });
+    }
+  }
