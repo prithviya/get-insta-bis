@@ -710,7 +710,7 @@ img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: calc(90px - 40px);
+  bottom: calc(75px - 40px);
   margin-bottom: 0;
   height: 40px;
   width: 40px;
@@ -776,7 +776,7 @@ img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: calc(80px - 80px / 2);
+  bottom: calc(50px - 50px / 2);
   margin-bottom: 0;
   height: calc(60px + 0px);
   width: calc(60px + 0px);
