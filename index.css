@@ -690,7 +690,8 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
   background-color: white;
   box-shadow: 0 10px 20px rgba(82, 74, 74, 0.3);
 }
@@ -709,10 +710,10 @@ img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: calc(100px - 40px);
+  bottom: calc(90px - 40px);
   margin-bottom: 0;
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   border-radius: 40px;
   display: flex;
   flex-direction: column;
@@ -724,19 +725,13 @@ img {
   box-shadow: 0 5px 5px rgba(255, 147, 85, 0.35);
   transition: height 0.3s;
 }
-.circle:hover {
-  height: 200px;
-  border-radius: 50px;
-}
+/* */
 .circle .plus-icon {
-  color: white;
-  font-size: 27px;
+  color: white !important;
+  font-size: 1.2rem;
   transition: opacity 0.3s, transform 0.2s;
 }
-.circle:hover .plus-icon {
-  transform: rotate(360deg);
-  opacity: 0;
-}
+
 .circle .social {
   position: absolute;
   top: 195px;
@@ -781,14 +776,14 @@ img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: calc(100px - 100px / 2);
+  bottom: calc(80px - 80px / 2);
   margin-bottom: 0;
-  height: calc(80px + 0px);
-  width: calc(80px + 0px);
+  height: calc(60px + 0px);
+  width: calc(60px + 0px);
   border-radius: calc(100px / 2);
-  background-color: #fdc0df;
+  box-shadow: 0 10px 20px rgb(82 74 74 / 80%);
 }
-.icon-home, .icon-settings {
-  font-size: 29px;
-  color: #fdc0df;
+.icon-home, .icon-settings, .icon-cart, .icon-bell {
+  font-size: 1.4rem;
+  color: #222 !important;
 }
