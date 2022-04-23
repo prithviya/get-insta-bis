@@ -14,17 +14,182 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/js/uikit-icons.min.js"></script>
     <!-- custom-css -->
     <link rel="stylesheet" href="./index.css">
-    <!--==================== UNICONS ====================-->
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
-
-    <!--==================== CSS ====================-->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <title>Get Insta</title>
-    <!-- js -->
-    <script src="./index.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
+    <div>
+        <div class="uk-section-primary uk-preserve-color">
+            <div uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; cls-inactive: uk-navbar-transparent uk-light; top: 600" class="custom-navbar-color">        
+                <nav class="uk-navbar-container" uk-navbar>
+                    <div class="uk-navbar-center">                
+                        <ul class="uk-navbar-nav">
+                            <li>
+                                <a href="" class="uk-text-capitalize uk-visible@m">Home</a>
+                            </li>
+                            <li>
+                                <a href="" class="uk-text-capitalize uk-visible@m">About us</a>
+                            </li>
+                            <li>
+                                <a href="" class="uk-text-capitalize uk-visible@m">our services</a>
+                            </li>
+                            <li>
+                                <a href="" class="uk-text-capitalize uk-visible@m">contact us</a>
+                            </li>
+                            
+                            <li>
+                                <a href="" class="uk-text-capitalize uk-visible@m">Profile</a>
+                            </li>
+                            
+                            <li>
+                                <a href="" class="uk-hidden@m uk-text-capitalize">Getinsta</button>
+                                </a>
+                            </li>
+                            <li style="margin-top: 25px;">
+                                <span class="uk-margin-medium-left uk-visible@m">
+                                    <i class="fa fa-user-circle fa-2x custom-color-white" aria-hidden="true"></i>
+                                </span>
+                                <div uk-dropdown="pos: top-right">
+                                    <ul class="uk-nav uk-dropdown-nav">
+                                        <ul class="uk-nav uk-dropdown-nav">
+                                            <li>
+                                                <a href="#modal-center" uk-toggle>
+                                                    <button class="uk-text-bold uk-text-capitalize uk-button uk-button-default uk-margin-small-right custom-color-white" type="button" style=" font-size:1rem; border: none;" uk-toggle="target: #modal-center">
+                                                        <span class="">
+                                                            <i class="uk-margin-small-right custom-color-white fa-2x fa fa-file-text-o" aria-hidden="true"></i>
+                                                        </span>Register
+                                                    </button>
+                                                </a>
+                                            </li>
+                                            <hr class="uk-divider-small uk-margin-small" style="border: 1px solid #fff;">
+                                            <li>
+                                                <a href="">
+                                                    <button class="uk-text-bold uk-text-capitalize uk-button uk-button-default uk-margin-small-right custom-color-white" type="button" style=" font-size:1rem; border: none;" uk-toggle="target: #modal-close-default1">
+                                                        <span class="">
+                                                            <i class="uk-margin-small-right custom-color-white fa-2x fa fa-sign-out" aria-hidden="true"></i>
+                                                        </span>Log out
+                                                    </button>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </ul>
+                                </div>
+                                <div id="modal-close-default1" class="uk-flex-top" uk-modal>
+                                    <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                                
+                                        <button class="uk-modal-close-default" type="button" uk-close></button>
+                                        <h3>Thank you for visiting</h3>
+                                        <p>It meant so much that you took the time to travel such a long way to see me. My days are always better when I get to be with you. Thank you so much for paying me a visit. I had such a wonderful time and will remember it for the rest of my years.</p>
+                                
+                                    </div>
+                                </div>
+                            </li> 
+                            <li style="margin-top:2px">
+                                <a class="uk-margin-medium-left uk-hidden@m"  href="#modal-center" uk-toggle>
+                                    <button class="uk-button" style="border-radius: 10px;">login</button>
+                                    <div id="modal-center" class="uk-flex-top" uk-modal>
+                                        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+                                    
+                                            <button class="uk-modal-close-default" type="button" uk-close></button>
+                                    
+                                            <div class="">
+                                                <h1 class="uk-text-center">Login</h1>
+                                                <div class="uk-margin">
+                                                    <form id="form">
+                                                        <h5 class="uk-text-bold uk-margin-small">Log in for the best experience</h5>
+                                                        <p class="uk-text-meta uk-text-muted uk-margin-remove">Experience the all new users</p>
+                                                        <div class="input-box">
+                                                            
+                                                          <label class="input-label">Mobile Number</label>
+                                                          <input type="text" class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)" />
+                                                        </div>
+                                                        <p class="uk-text-meta uk-text-muted uk-margin-remove">By continuing, you agree to terms of use and privacy policy</p>
+                                                        <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
+                                                            <button class="card__button">Sign In</button>
+                                                        </div>
+                                                    </form>
+                                                </div>    
+                                            </div>                                    
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                            </li>
+                            <li style="margin-top:2px">
+                                <a class="uk-hidden@m uk-padding-remove" uk-toggle="target: #offcanvas-none">
+                                    <svg width="30pt" height="50pt" fill="#ffffff" version="1.1" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m560 96.25h-420c-9.3789 0-18.043-5.0039-22.734-13.125-4.6875-8.1211-4.6875-18.129 0-26.25 4.6914-8.1211 13.355-13.125 22.734-13.125h420c9.3789 0 18.043 5.0039 22.734 13.125 4.6875 8.1211 4.6875 18.129 0 26.25-4.6914 8.1211-13.355 13.125-22.734 13.125zm26.25 183.75c0-6.9609-2.7656-13.641-7.6875-18.562s-11.602-7.6875-18.562-7.6875h-245c-9.3789 0-18.043 5.0039-22.734 13.125-4.6875 8.1211-4.6875 18.129 0 26.25 4.6914 8.1211 13.355 13.125 22.734 13.125h245c6.9609 0 13.641-2.7656 18.562-7.6875s7.6875-11.602 7.6875-18.562zm0 210c0-6.9609-2.7656-13.641-7.6875-18.562s-11.602-7.6875-18.562-7.6875h-420c-9.3789 0-18.043 5.0039-22.734 13.125-4.6875 8.1211-4.6875 18.129 0 26.25 4.6914 8.1211 13.355 13.125 22.734 13.125h420c6.9609 0 13.641-2.7656 18.562-7.6875s7.6875-11.602 7.6875-18.562z"/>
+                                    </svg>
+                                </a>
+
+                                <div id="offcanvas-none" uk-offcanvas="mode: slide; overlay: true">
+                                    <div class="uk-offcanvas-bar uk-flex uk-flex-column">    
+                                        <button class="uk-offcanvas-close" type="button" uk-close></button>
+                                        <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
+                                            <li>
+                                                <a href="" class="uk-text-capitalize uk-text-bold custom-color-white" style="font-size: 1.2rem;">home</a>
+                                            </li>
+                                            <hr class="uk-margin-small custom-color-white" style="border: 1px solid;border-color: #fff;">
+                                            <li>
+                                                <a href="" class="uk-text-capitalize uk-text-bold custom-color-white" style="font-size: 1.2rem;">About us</a>
+                                            </li>
+                                            <hr class="uk-margin-small custom-color-white" style="border: 1px solid;border-color: #fff;">
+                                            <li>
+                                                <a href="" class="uk-text-capitalize uk-text-bold custom-color-white" style="font-size: 1.2rem;">our services</a>
+                                            </li>
+                                            <hr class="uk-margin-small custom-color-white" style="border: 1px solid;border-color: #fff;">
+                                            <li>
+                                                <a href="" class="uk-text-capitalize uk-text-bold custom-color-white" style="font-size: 1.2rem;">contact us</a>
+                                            </li>
+                                            <hr class="uk-margin-small custom-color-white" style="border: 1px solid;border-color: #fff;">
+                                            <li>
+                                                <a href="" class="uk-text-capitalize uk-text-bold custom-color-white" style="font-size: 1.2rem;">login</a>
+                                            </li>
+                                            <hr class="uk-margin-small custom-color-white" style="border: 1px solid;border-color: #fff;">
+                                            <li>
+                                                <a href="" class="uk-text-capitalize uk-text-bold custom-color-white" style="font-size: 1.2rem;">New Order</a>
+                                            </li>                                            
+                                            <hr class="uk-margin-small custom-color-white" style="border: 1px solid;border-color: #fff;">
+                                            <li>
+                                                <a href="" class="uk-text-capitalize uk-text-bold custom-color-white" style="font-size: 1.2rem;">Order History</a>
+                                            </li>
+                                            <hr class="uk-margin-small custom-color-white" style="border: 1px solid;border-color: #fff;">
+                                            <li>
+                                                <a href="" class="uk-text-capitalize uk-text-bold custom-color-white" style="font-size: 1.2rem;">Dashboard</a>
+                                            </li>
+                                            <hr class="uk-margin-small custom-color-white" style="border: 1px solid;border-color: #fff;">
+                                            <li>
+                                                <a href="" class="uk-text-capitalize uk-text-bold custom-color-white" style="font-size: 1.2rem;">update</a>
+                                            </li>
+                                            <hr class="uk-margin-small custom-color-white" style="border: 1px solid;border-color: #fff;">
+                                            <li>
+                                                <a href="" class="uk-text-capitalize uk-text-bold custom-color-white" style="font-size: 1.2rem;">add funds</a>
+                                            </li>
+                                            <hr class="uk-margin-small custom-color-white" style="border: 1px solid;border-color: #fff;">
+                                            <li>
+                                                <a href="" class="uk-text-capitalize uk-text-bold custom-color-white" style="font-size: 1.2rem;">tickets</a>
+                                            </li>
+                                            <hr class="uk-margin-small custom-color-white" style="border: 1px solid;border-color: #fff;">
+                                            <li>
+                                                <a href="" class="uk-text-capitalize uk-text-bold custom-color-white" style="font-size: 1.2rem;">Give away</a>
+                                            </li>
+                                            <hr class="uk-margin-small custom-color-white" style="border: 1px solid;border-color: #fff;">
+                                            <li>
+                                                <a href="" class="uk-text-capitalize uk-text-bold custom-color-white" style="font-size: 1.2rem;">child panels</a>
+                                            </li>
+                                            <hr class="uk-margin-small custom-color-white" style="border: 1px solid;border-color: #fff;">
+                                            <li>
+                                                <a href="" class="uk-text-capitalize uk-text-bold custom-color-white" style="font-size: 1.2rem;">News</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>                                                      
+                        </ul>
+                    </div>
+                    <!-- mobile view -->
+                </nav>
+            </div>      
+        </div>
+    </div>
     <div class="uk-section uk-section-muted">
         <div class="uk-container">
             <h1 class="uk-text-bold uk-text-capitalize">Services</h1>
@@ -38,29 +203,303 @@
                 <li>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            <h3 class="uk-card-title">Default</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <div>
+                                <legend class="uk-legend uk-h5 uk-margin-small">Id<span class="uk-margin-small-left"></span></legend>
+                                <legend class="uk-legend uk-h5 uk-margin-small">Service<span class="uk-margin-small-left"></span></legend>
+                                <legend class="uk-legend uk-h5 uk-margin-small">Rate Per<span class="uk-margin-small-left"></span></legend>
+                                <div class="uk-clearfix">
+                                    <div class="uk-float-left">
+                                        <legend class="uk-legend uk-h5 uk-margin-small">Min -<span class="uk-margin-small-left"></span></legend>
+                                    </div>
+                                    <div class="uk-float-right">
+                                        <legend class="uk-legend uk-h5 uk-margin-small">Max -<span class="uk-margin-small-left"></span></legend>
+                                    </div>
+                                </div>
+                                <div class="uk-clearfix">                                    
+                                    <div class="uk-float-right">
+                                        <legend class="uk-legend uk-h5 uk-margin-small">Description<span class="uk-margin-small-left"></span></legend>
+                                    </div>
+                                    <div class="uk-float-left">
+                                        <legend class="uk-legend uk-h5 uk-margin-small">Average time<span class="uk-margin-small-left"></span></legend>
+                                    </div>
+                                </div>
+                            </div>    
                         </div>
                     </div>
                 </li>    
                 <li>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            <h3 class="uk-card-title">Default</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <div>
+                                <legend class="uk-legend uk-h5 uk-margin-small">Id<span class="uk-margin-small-left"></span></legend>
+                                <legend class="uk-legend uk-h5 uk-margin-small">Service<span class="uk-margin-small-left"></span></legend>
+                                <legend class="uk-legend uk-h5 uk-margin-small">Rate Per<span class="uk-margin-small-left"></span></legend>
+                                <div class="uk-clearfix">
+                                    <div class="uk-float-left">
+                                        <legend class="uk-legend uk-h5 uk-margin-small">Min -<span class="uk-margin-small-left"></span></legend>
+                                    </div>
+                                    <div class="uk-float-right">
+                                        <legend class="uk-legend uk-h5 uk-margin-small">Max -<span class="uk-margin-small-left"></span></legend>
+                                    </div>
+                                </div>
+                                <div class="uk-clearfix">                                    
+                                    <div class="uk-float-right">
+                                        <legend class="uk-legend uk-h5 uk-margin-small">Description<span class="uk-margin-small-left"></span></legend>
+                                    </div>
+                                    <div class="uk-float-left">
+                                        <legend class="uk-legend uk-h5 uk-margin-small">Average time<span class="uk-margin-small-left"></span></legend>
+                                    </div>
+                                </div>
+                            </div>    
                         </div>
                     </div>
                 </li> 
                 <li>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body">
-                            <h3 class="uk-card-title">Default</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <div>
+                                <legend class="uk-legend uk-h5 uk-margin-small">Id<span class="uk-margin-small-left"></span></legend>
+                                <legend class="uk-legend uk-h5 uk-margin-small">Service<span class="uk-margin-small-left"></span></legend>
+                                <legend class="uk-legend uk-h5 uk-margin-small">Rate Per<span class="uk-margin-small-left"></span></legend>
+                                <div class="uk-clearfix">
+                                    <div class="uk-float-left">
+                                        <legend class="uk-legend uk-h5 uk-margin-small">Min -<span class="uk-margin-small-left"></span></legend>
+                                    </div>
+                                    <div class="uk-float-right">
+                                        <legend class="uk-legend uk-h5 uk-margin-small">Max -<span class="uk-margin-small-left"></span></legend>
+                                    </div>
+                                </div>
+                                <div class="uk-clearfix">                                    
+                                    <div class="uk-float-right">
+                                        <legend class="uk-legend uk-h5 uk-margin-small">Description<span class="uk-margin-small-left"></span></legend>
+                                    </div>
+                                    <div class="uk-float-left">
+                                        <legend class="uk-legend uk-h5 uk-margin-small">Average time<span class="uk-margin-small-left"></span></legend>
+                                    </div>
+                                </div>
+                            </div>    
                         </div>
                     </div>
                 </li> 
             </ul>
         </div>
     </div>
+    <div class="wrapper uk-position uk-position-bottom uk-position-fixed">
+        <div class="navbar">
+            <a href="index.html">
+                <i class="fa fa-home icon-home"></i>
+            </a>
+            <a href="service.html">
+                <i class="fa fa-file-text icon-settings" aria-hidden="true"></i>
+            </a>
+            <i class="fa fa-bell-o icon-bell"></i>
+            <a href="#settings" uk-toggle>
+                <i class="fa fa-cog icon-settings"></i>
+                <div id="settings" class="uk-modal-full" uk-modal>
+                    <div class="uk-modal-dialog">
+                        <!-- <button class="uk-modal-close-full uk-close-large uk-padding-remove-bottom" type="button" uk-close ></button> -->
+                        <div class="uk-flex-middle">
+                            <div class="uk-padding-large">
+                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+                                        <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">mail id</time></p>
+                                    </div>
+                                    <div class="uk-width-auto">
+                                        <img class="uk-border-circle" width="40" height="40" src="images/avatar.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <div class="circle">
+                <a href="#new-order" uk-toggle>
+                    <i class="fa fa-cart-plus plus-icon" aria-hidden="true"></i>
+                </a>
+            <!-- cart popup -->
+                <div id="new-order" class="uk-modal-full" uk-modal>
+                    <div class="uk-modal-dialog">
+                        <button class="uk-modal-close-full uk-close-large uk-padding-remove-bottom" type="button" uk-close ></button>
+                        <div class="uk-flex-middle">
+                            <div class="uk-padding-large">
+                                <ul class="uk-subnav uk-subnav-pill" uk-switcher style="">
+                                    <li><a href="#" class="instagram">Instagram</a></li>
+                                    <li><a href="#" class="facebook">Facebook</a></li>
+                                    <li><a href="#" class="youtube">Youtube</a></li>
+                                </ul>
+                                <ul class="uk-switcher uk-margin">
+                                    <li>
+                                        <div class="uk-card uk-card-default uk-width-1-2@m">
+                                            <div class="uk-card-header" style="background-image: linear-gradient( 109.6deg, #833ab4 0%, #fd1d1d 70%, #fcb045 91.2% );">
+                                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <img src="https://img.icons8.com/ios/50/ffffff/instagram-new--v1.png"/>                                   
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <h3 class="uk-card-title uk-margin-remove-bottom custom-color-white">Instagram</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="uk-card-body uk-padding-remove-bottom">
+                                                <form action="">
+                                                    <div class="input-box uk-margin">
+                                                        <label class="input-label">Choose a Category</label>
+                                                        <select class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)">
+                                                            <option value="-1"></option>
+                                                            <option value="1">Followers</option>
+                                                            <option value="2">Likes</option>
+                                                            <option value="3">View</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-box uk-margin">
+                                                        <label class="input-label">Choose an Order</label>
+                                                        <select class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)">
+                                                            <option value="-1"></option>
+                                                            <option value="1">Indian Followers</option>
+                                                            <option value="2">USA Followers</option>
+                                                            <option value="3">UK Followers</option>
+                                                            <option value="4">UAE Followers</option>
+                                                        </select>
+                                                    </div>                                  
+                                                    <div class="input-box uk-margin">
+                                                        <label class="input-label">Link</label>
+                                                        <input type="text" class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)" />
+                                                    </div>
+                                                    <div class="input-box uk-margin">
+                                                        <label class="input-label">Quantity</label>
+                                                        <input type="text" class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)" />
+                                                    </div>
+                                                    <div class="input-box uk-margin">
+                                                        <label class="input-label">Charges</label>
+                                                        <input type="text" class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)" />
+                                                    </div>                                                                      
+                                                    <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
+                                                        <button class="card__button">Buy Now</button>
+                                                    </div>
+                                                </form>
+                                            </div>                        
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-card uk-card-default uk-width-1-2@m">
+                                            <div class="uk-card-header" style="background-image: linear-gradient( 109.6deg, #2B32B2 0%, #1488CC 100% );">
+                                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <img src="https://img.icons8.com/ios/50/ffffff/instagram-new--v1.png"/>                                   
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <h3 class="uk-card-title uk-margin-remove-bottom custom-color-white">Facebook</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="uk-card-body uk-padding-remove-bottom">
+                                                <form action="">
+                                                    <div class="input-box uk-margin">
+                                                        <label class="input-label">Choose a Category</label>
+                                                        <select class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)">
+                                                            <option value="-1"></option>
+                                                            <option value="1">Profile Followers</option>
+                                                            <option value="2">Page Followers</option>
+                                                            <option value="3">Page Likes</option>
+                                                            <option value="4">Post Likes</option>
+                                                            <option value="5">Post View</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-box uk-margin">
+                                                        <label class="input-label">Choose an Order</label>
+                                                        <select class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)">
+                                                            <option value="-1"></option>
+                                                            <option value="1">Indian Followers</option>
+                                                            <option value="2">USA Followers</option>
+                                                            <option value="3">UK Followers</option>
+                                                            <option value="4">UAE Followers</option>
+                                                        </select>
+                                                    </div>                                  
+                                                    <div class="input-box uk-margin">
+                                                        <label class="input-label">Link</label>
+                                                        <input type="text" class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)" />
+                                                    </div>
+                                                    <div class="input-box uk-margin">
+                                                        <label class="input-label">Quantity</label>
+                                                        <input type="text" class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)" />
+                                                    </div>
+                                                    <div class="input-box uk-margin">
+                                                        <label class="input-label">Charges</label>
+                                                        <input type="text" class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)" />
+                                                    </div>
+                                                                                                                        
+                                                    <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
+                                                        <button class="card__button">Buy Now</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="uk-card uk-card-default uk-width-1-2@m">
+                                            <div class="uk-card-header" style="background-image: linear-gradient( 109.6deg, #b31217 0%, #e52d27 100% );">
+                                                <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                                    <div class="uk-width-auto">
+                                                        <img src="https://img.icons8.com/ios/50/ffffff/instagram-new--v1.png"/>                                   
+                                                    </div>
+                                                    <div class="uk-width-expand">
+                                                        <h3 class="uk-card-title uk-margin-remove-bottom custom-color-white">Youtube</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="uk-card-body uk-padding-remove-bottom">
+                                                <form action="">
+                                                    <div class="input-box uk-margin">
+                                                        <label class="input-label">choose a category</label>
+                                                        <select class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)">
+                                                            <option value="-1"></option>
+                                                            <option value="1">Subscriber </option>
+                                                            <option value="2">View</option>
+                                                            <option value="3">Likes</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="input-box uk-margin">
+                                                        <label class="input-label">Choose an Order</label>
+                                                        <select class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)">
+                                                            <option value="-1"></option>
+                                                            <option value="1">Indian Followers</option>
+                                                            <option value="2">USA Followers</option>
+                                                            <option value="3">UK Followers</option>
+                                                            <option value="4">UAE Followers</option>
+                                                        </select>
+                                                    </div>                                  
+                                                    <div class="input-box uk-margin">
+                                                        <label class="input-label">Link</label>
+                                                        <input type="text" class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)" />
+                                                    </div>
+                                                    <div class="input-box uk-margin">
+                                                        <label class="input-label">Quantity</label>
+                                                        <input type="text" class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)" />
+                                                    </div>
+                                                    <div class="input-box uk-margin">
+                                                        <label class="input-label">Charges</label>
+                                                        <input type="text" class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)" />
+                                                    </div>                                                                   
+                                                    <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
+                                                        <button class="card__button">Buy Now</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="circleBackground"></div>
+        </div>
+      </div>
 </body>
 </html>

@@ -34,7 +34,7 @@
 
 .uk-offcanvas-bar {
   background: linear-gradient( 109.6deg,  rgba(116,18,203,1) 0%, rgba(230,46,131,1) 91.2% );
-  color: white !important;
+  color: #333 !important;
 }
 .uk-light .uk-nav-primary>li>a, .uk-offcanvas-bar .uk-nav-primary>li>a {
   color: rgba(255,255,255);
@@ -846,6 +846,6 @@ img {
 }
 /* input focus */
 .uk-legend {
-  font-size: 1rem;
+  font-size: 1rem !important;
   line-height: 1.4;
 }
