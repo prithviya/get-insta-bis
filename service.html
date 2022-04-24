@@ -286,13 +286,13 @@
             </ul>
         </div>
     </div>
-    <div class="wrapper uk-position uk-position-bottom uk-position-fixed uk-hidden@m">
+    <div class="wrapper uk-position uk-position-bottom uk-position-fixed hidden@m">
         <div class="navbar">
             <a href="index.html">
                 <i class="fa fa-home icon-home"></i>
             </a>
             <a href="service.html">
-                <i class="fa fa-file-text icon-settings" aria-hidden="true"></i>
+                <i class="fa fa-cogs icon-settings" aria-hidden="true"></i>
             </a>
             <i class="fa fa-bell-o icon-bell"></i>
             <a href="#settings" uk-toggle>
@@ -302,40 +302,44 @@
                         <!-- <button class="uk-modal-close-full uk-close-large uk-padding-remove-bottom" type="button" uk-close ></button> -->
                         <div class="uk-flex-middle">
                             <div class="uk-padding-large custom-card-padding">
-                                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                                    <div class="uk-width-auto">
-                                        <img class="uk-border-circle" width="40" height="40" src="./image/avatar.jpg">
-                                    </div>
-                                    <div class="uk-width-expand">
-                                        <p class="uk-margin-remove-bottom uk-text-bold">Name</p>
-                                        <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">mail id</time></p>
-                                        <span class="uk-label uk-label-warning uk-text-uppercase uk-text-bold" style="font-size: x-small;">verify email</span>
-                                    </div>
-                                    <div class="uk-width-auto">
-                                        <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
-                                    </div>
+                                <div>
+                                    <a href="account.html">
+                                        <div class="uk-grid-small uk-flex-middle" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <img class="uk-border-circle" width="40" height="40" src="./image/avatar.jpg">
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <p class="uk-margin-remove-bottom uk-text-bold">Name</p>
+                                                <p class="uk-text-meta uk-margin-remove"><time datetime="2016-04-01T19:00">mail id</time></p>
+                                                <span class="uk-label uk-label-warning uk-text-uppercase uk-text-bold" style="font-size: x-small;">verify email</span>
+                                            </div>
+                                            <div class="uk-width-auto">
+                                                <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </a>
                                 </div>
                                 <hr class="uk-margin-small uk-padding-remove">
                                 <h5 class="uk-margin-small uk-text-bold uk-text-capitalize">accounts settings</h5>
-                                <a href="account.html">
+                                <div>
                                     <div class="uk-grid-small uk-flex-middle uk-margin-top" uk-grid>
                                         <div class="uk-width-auto">
                                             <i class="uk-margin-small-left fa fa-link" aria-hidden="true"></i>
                                         </div>
                                         <div class="uk-width-expand">
-                                            <p class="uk-text-bold cusotm-menu-bold uk-text-capitalize">Accounts</p>
+                                            <p class="uk-text-bold cusotm-menu-bold uk-text-capitalize" style="margin-left: 8px;">Accounts</p>
                                         </div>
                                         <div class="uk-width-auto">
                                             <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
                                         </div>
                                     </div>
-                                </a>
+                                </div>
                                 <div class="uk-grid-small uk-flex-middle uk-margin-top" uk-grid>
                                     <div class="uk-width-auto">
-                                        <i class="uk-margin-small-left fa fa-unlock-alt" aria-hidden="true"></i>
+                                        <i class="uk-margin-small-left fa fa-line-chart" aria-hidden="true"></i>
                                     </div>
                                     <div class="uk-width-expand">
-                                        <p class="uk-text-bold cusotm-menu-bold uk-text-capitalize" style="margin-left: 4px;">hookle premium</p>
+                                        <p class="uk-text-bold cusotm-menu-bold uk-text-capitalize" style="margin-left: 5px;">Statistics</p>
                                     </div>
                                     <div class="uk-width-auto">
                                         <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
@@ -343,10 +347,51 @@
                                 </div>
                                 <div class="uk-grid-small uk-flex-middle uk-margin-top" uk-grid>
                                     <div class="uk-width-auto">
-                                        <i class="uk-margin-small-left fa fa-bell-o" aria-hidden="true"></i>
+                                        <i class="uk-margin-small-left fa fa-first-order" aria-hidden="true"></i>
                                     </div>
                                     <div class="uk-width-expand">
-                                        <p class="uk-text-bold cusotm-menu-bold uk-text-capitalize" style="margin-left: 0px;">notifications</p>
+                                        <p class="uk-text-bold cusotm-menu-bold uk-text-capitalize uk-margin-small-left" style="margin-left: 3px;">My Order</p>
+                                    </div>
+                                    <div class="uk-width-auto">
+                                        <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="#new-order" uk-toggle>
+                                        <div class="uk-grid-small uk-flex-middle uk-margin-top" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <i class="uk-margin-small-left fa fa-cart-plus" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <p class="uk-text-bold cusotm-menu-bold uk-text-capitalize uk-margin-small-left" style="margin-left: 1px;">New Order</p>
+                                            </div>
+                                            <div class="uk-width-auto">
+                                                <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="service.html">
+                                        <div class="uk-grid-small uk-flex-middle uk-margin-top" uk-grid>
+                                            <div class="uk-width-auto">
+                                                <i class="uk-margin-small-left fa fa-cogs" aria-hidden="true"></i>
+                                            </div>
+                                            <div class="uk-width-expand">
+                                                <p class="uk-text-bold cusotm-menu-bold uk-text-capitalize" style="margin-left: 8px;">Services</p>
+                                            </div>
+                                            <div class="uk-width-auto">
+                                                <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="uk-grid-small uk-flex-middle uk-margin-top" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <i class="uk-margin-small-left fa fa-money" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <p class="uk-text-bold cusotm-menu-bold uk-text-capitalize uk-margin-small-left" style="margin-left: 0px;">Add Funds</p>
                                     </div>
                                     <div class="uk-width-auto">
                                         <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
@@ -354,10 +399,21 @@
                                 </div>
                                 <div class="uk-grid-small uk-flex-middle uk-margin-top" uk-grid>
                                     <div class="uk-width-auto">
-                                        <i class="uk-margin-small-left fa fa-ellipsis-h" aria-hidden="true"></i>
+                                        <i class="uk-margin-small-left fa fa-key" aria-hidden="true"></i>
                                     </div>
                                     <div class="uk-width-expand">
-                                        <p class="uk-text-bold cusotm-menu-bold uk-text-capitalize" style="margin-left: 3px;">more settings</p>
+                                        <p class="uk-text-bold cusotm-menu-bold uk-text-capitalize uk-margin-small-left" style="margin-left: 0px;">API</p>
+                                    </div>
+                                    <div class="uk-width-auto">
+                                        <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="uk-grid-small uk-flex-middle uk-margin-top" uk-grid>
+                                    <div class="uk-width-auto">
+                                        <i class="uk-margin-small-left fa fa-google-wallet" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="uk-width-expand">
+                                        <p class="uk-text-bold cusotm-menu-bold uk-text-capitalize uk-margin-small-left" style="margin-left: 0px;">Transaction logs</p>
                                     </div>
                                     <div class="uk-width-auto">
                                         <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
@@ -371,7 +427,7 @@
                                         <i class="uk-margin-small-left fa fa-info" aria-hidden="true"></i>
                                     </div>
                                     <div class="uk-width-expand">
-                                        <p class="uk-text-bold cusotm-menu-bold uk-text-capitalize" style="margin-left: 10px;">help center</p>
+                                        <p class="uk-text-bold cusotm-menu-bold uk-text-capitalize" style="margin-left: 17px;">help center</p>
                                     </div>
                                     <div class="uk-width-auto">
                                         <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
@@ -382,7 +438,7 @@
                                         <i class="uk-margin-small-left fa fa-share-alt" aria-hidden="true"></i>
                                     </div>
                                     <div class="uk-width-expand">
-                                        <p class="uk-text-bold cusotm-menu-bold uk-text-capitalize" style="margin-left: 2.5px;">refer to a friend</p>
+                                        <p class="uk-text-bold cusotm-menu-bold uk-text-capitalize" style="margin-left: 7.5px;">refer to a friend</p>
                                     </div>
                                     <div class="uk-width-auto">
                                         <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
@@ -393,7 +449,7 @@
                                         <i class="uk-margin-small-left fa fa-lock" aria-hidden="true"></i>
                                     </div>
                                     <div class="uk-width-expand">
-                                        <p class="uk-text-bold cusotm-menu-bold uk-text-capitalize" style="margin-left: 5px;">terms & Privacy</p>
+                                        <p class="uk-text-bold cusotm-menu-bold uk-text-capitalize uk-margin-small-left" style="margin-left: 5px;">terms & Privacy</p>
                                     </div>
                                     <div class="uk-width-auto">
                                         <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
@@ -414,7 +470,7 @@
                         <button class="uk-modal-close-full uk-close-large uk-padding-remove-bottom" type="button" uk-close ></button>
                         <div class="uk-flex-middle">
                             <div class="uk-padding-large">
-                                <ul class="uk-subnav uk-subnav-pill" uk-switcher style="">
+                                <ul class="uk-subnav uk-subnav-pill" uk-switcher>
                                     <li><a href="#" class="instagram">Instagram</a></li>
                                     <li><a href="#" class="facebook">Facebook</a></li>
                                     <li><a href="#" class="youtube">Youtube</a></li>
