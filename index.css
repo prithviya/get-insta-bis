@@ -59,6 +59,10 @@
 {
   color: #fff!important;
 }
+.custom-card-padding
+{
+  padding: 30px;
+}
 /* CSS */
 .button-64 {
   background-color: transparent;
