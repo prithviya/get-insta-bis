@@ -62,6 +62,11 @@
 .custom-card-padding
 {
   padding: 30px;
+  margin-bottom: 45px;
+}
+.cusotm-menu-bold
+{
+  font-weight: 500;
 }
 /* CSS */
 .button-64 {
