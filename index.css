@@ -858,3 +858,7 @@ img {
   font-size: 1rem !important;
   line-height: 1.4;
 }
+/*  */
+.uk-tab>*>a {
+  font-size: 1.3rem;
+}
