@@ -14,6 +14,13 @@
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.13.1/dist/js/uikit-icons.min.js"></script>
     <!-- custom-css -->
     <link rel="stylesheet" href="./index.css">
+    <!--==================== UNICONS ====================-->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+
+    <!--==================== CSS ====================-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Get Insta</title>
+    <!-- js -->
     <script src="./index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
@@ -192,76 +199,84 @@
             </div>      
         </div>
     </div>
-    <div class="uk-section uk-section-muted">
-        <div class="uk-container">
-            <h3 class="uk-text-capitalize uk-text-bold">Your account</h3>
-            <div class="uk-card uk-card-default">
-                <div class="uk-card-header">
-                    <div class="uk-grid-small uk-flex-middle" uk-grid>
-                        <div class="uk-width-expand">
-                            <h4 class="uk-margin-remove-bottom">Basic Information</h4>
-                        </div>
+    <div class="uk-section uk-section-muted uk-hidden@m">
+        <div class="uk-container uk-margin-large-bottom">
+            <div class="uk-child-width-1-5@m uk-child-width-1-3@s uk-text-center uk-grid-small uk-grid-match" uk-grid>
+                <div>
+                    <div class="uk-card uk-card-small uk-card-default uk-card-body"style="border-top: 5px solid; border-color: darkblue; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                        <img src="https://img.icons8.com/nolan/64/get-cash.png"/>
+                        <h3 class="uk-card-title uk-margin-remove">Your Balance</h3>
+                        <h4 class="uk-text-bold uk-margin-small">₹10.00</h4>
                     </div>
                 </div>
-                <div class="uk-card-body">
-                    <div class="input-box uk-margin">
-                        <label class="input-label">First Name</label>
-                        <input class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)">
-                    </div>
-                    <div class="input-box uk-margin">
-                        <label class="input-label">Last Name</label>
-                        <input class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)">
-                    </div>
-                    <div class="input-box uk-margin">
-                        <label class="input-label">E-Mail</label>
-                        <input class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)">
-                    </div>
-                    <div class="input-box uk-margin">
-                        <label class="input-label">Time Zone</label>
-                        <select class="input-1" onfocus="setFocus(true)" onblur="setFocus(false)">
-                            <option value="-1"></option>
-                            <option value="1">(UTC-12:00) International Date Line West</option>
-                            <option value="2">(UTC-07:00) Arizona</option>
-                            <option value="3">(UTC-07:00) Mountain Time (US and Canada)</option>
-                        </select>
-                    </div>
-                    <div class="input-box uk-margin">
-                        <label class="input-label">Password</label>
-                        <input class="input-1 password" type="password" onfocus="setFocus(true)" onblur="setFocus(false)">
-                    </div>
-                    <div class="input-box uk-margin">
-                        <label class="input-label">Confirm Password</label>
-                        <input class="input-1 password" type="password" onfocus="setFocus(true)" onblur="setFocus(false)">
-                    </div>
-                    <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
-                        <button class="card__button">Save</button>
+                <div>
+                    <div class="uk-card uk-card-small uk-card-default uk-card-body"style="border-top: 5px solid; border-color: darkblue; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                        <img src="https://img.icons8.com/nolan/64/expensive-2.png"/>
+                        <h3 class="uk-card-title uk-margin-remove">Total Amount Spents</h3>
+                        <h4 class="uk-text-bold uk-margin-small">₹250.00</h4>
                     </div>
                 </div>
-            </div>
-            <div class="uk-card uk-card-default uk-margin">
-                <div class="uk-card-header">
-                    <div class="uk-grid-small uk-flex-middle" uk-grid>
-                        <div class="uk-width-expand">
-                            <h4 class="uk-margin-remove-bottom">Your API Key</h4>
-                        </div>
+                <div>
+                    <div class="uk-card uk-card-small uk-card-default uk-card-body"style="border-top: 5px solid; border-color: darkblue; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                        <img src="https://img.icons8.com/nolan/64/todo-list.png"/>
+                        <h3 class="uk-card-title uk-margin-remove">Total Order</h3>
+                        <h4 class="uk-text-bold uk-margin-small">27</h4>
                     </div>
                 </div>
-                <div class="uk-card-body">
-                    <div class="uk-margin">
-                        <label class="uk-form-label" for="form-stacked-text" style="font-size: 1.3rem;">Key</label>
-                        <div class="uk-form-controls uk-margin input-box">
-                            <input class="uk-input input-1" id="form-stacked-text" type="text" placeholder="fhJzcxDhfiuThfiA3a">
-                        </div>
-                    </div>
-                    <div class="uk-padding-small" style="display: flex; align-items: center; text-align: center;justify-content: space-around;">
-                        <button class="card__button">Generate New</button>
+                <div>
+                    <div class="uk-card uk-card-small uk-card-default uk-card-body"style="border-top: 5px solid; border-color: darkblue; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                        <img src="https://img.icons8.com/nolan/64/two-tickets.png"/>
+                        <h3 class="uk-card-title uk-margin-remove">Total Ticket</h3>
+                        <h4 class="uk-text-bold uk-margin-small">08</h4>
                     </div>
                 </div>
-                
+                <div>
+                    <div class="uk-card uk-card-small uk-card-default uk-card-body"style="border-top: 5px solid; border-color: darkblue; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                        <img src="https://img.icons8.com/nolan/64/task-completed.png"/>
+                        <h3 class="uk-card-title uk-margin-remove">Completed</h3>
+                        <h4 class="uk-text-bold uk-margin-small">54</h4>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-small uk-card-default uk-card-body"style="border-top: 5px solid; border-color: darkblue; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                        <img src="https://img.icons8.com/nolan/64/loading-bar.png"/>
+                        <h3 class="uk-card-title uk-margin-remove">Processing</h3>
+                        <h4 class="uk-text-bold uk-margin-small">4</h4>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-small uk-card-default uk-card-body"style="border-top: 5px solid; border-color: darkblue; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                        <img src="https://img.icons8.com/nolan/64/in-progress.png"/>
+                        <h3 class="uk-card-title uk-margin-remove">Inprogress</h3>
+                        <h4 class="uk-text-bold uk-margin-small">5</h4>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-small uk-card-default uk-card-body"style="border-top: 5px solid; border-color: darkblue; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                        <img src="https://img.icons8.com/nolan/64/task-completed.png"/>
+                        <h3 class="uk-card-title uk-margin-remove">Partial</h3>
+                        <h4 class="uk-text-bold uk-margin-small">4</h4>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-small uk-card-default uk-card-body"style="border-top: 5px solid; border-color: darkblue; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                        <img src="https://img.icons8.com/nolan/64/bill.png"/>
+                        <h3 class="uk-card-title uk-margin-remove">Pending</h3>
+                        <h4 class="uk-text-bold uk-margin-small">1</h4>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-small uk-card-default uk-card-body"style="border-top: 5px solid; border-color: darkblue; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                        <img src="https://img.icons8.com/nolan/64/cancel.png"/>
+                        <h3 class="uk-card-title uk-margin-remove">Cancel</h3>
+                        <h4 class="uk-text-bold uk-margin-small">0</h4>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="wrapper uk-position uk-position-bottom uk-position-fixed hidden@m">
+    <!-- footer -->
+    <div class="wrapper uk-position uk-position-bottom uk-position-fixed uk-hidden@m">
         <div class="navbar">
             <a href="index.html">
                 <i class="fa fa-home icon-home"></i>
